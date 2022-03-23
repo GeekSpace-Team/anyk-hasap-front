@@ -1,0 +1,47 @@
+.leftContainer {
+    width: 50%;
+    min-height: 70vh;
+}
+.conLeftItems{
+    color: #2A2456;
+    font-size: 16px;
+    font-family: 'regularFont';
+}
+
+.mapContainer{
+    width: 100%;
+    height: 45vh;
+    margin-top: 50px;
+}
+.map{
+    width: 96%;
+    height: 10%;
+}
+
+
+.rightContainer {
+    width: 50%;
+    margin-left: 7%;
+    min-height: 70vh;
+    margin-top: 77px;
+}
+input{
+    border: none;
+    border-bottom: 1px solid #000026;
+    width: 100%;
+}
+textarea{
+    border: none;
+    border-bottom: 1px solid #000026;
+}
+.sendButton {
+    margin-top: 50px;
+}
+.sendButton button{
+    width: 170px;
+    background-color: white;
+    border: 1px solid #000026;
+    height: 35px;
+    font-family: 'regularFont';
+    color: #000026;
+}

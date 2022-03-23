@@ -1,0 +1,28 @@
+.rectangle {
+    background-color: #fff;
+  }
+  .triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 20px solid #fff;
+}
+
+.customerUserName{
+    color: #2A2456;
+    font-family: "regularFont";
+    font-size: 14px;
+}
+
+.customerReview{
+    background-color: #F8F8F8;
+    padding-top: 50px;
+}
+p {
+    text-align: justify;
+    padding: 12px;
+}
+.customerDiv{
+    display: flex;
+}

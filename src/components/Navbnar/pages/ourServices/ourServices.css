@@ -1,0 +1,8 @@
+
+.imgContainer img
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+}

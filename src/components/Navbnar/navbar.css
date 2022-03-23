@@ -1,0 +1,70 @@
+@font-face {
+    font-family: boldFont;
+    src: url(../../../public/fonts/Comfortaa-Bold.ttf);
+  }
+@font-face {
+    font-family: lightFont;
+    src: url(../../../public/fonts/Comfortaa-Light.ttf);
+  }
+  @font-face {
+    font-family: mediumFont;
+    src: url(../../../public/fonts/Comfortaa-Medium.ttf);
+  }
+  @font-face {
+    font-family: regularFont;
+    src: url(../../../public/fonts/Comfortaa-Regular.ttf);
+  }
+  @font-face {
+    font-family: semiBold;
+    src: url(../../../public/fonts/Comfortaa-SemiBold.ttf);
+  }
+.mobileLink{
+    color:white;
+    padding: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.mobileLink:hover{
+    background-color: white;
+    color: #000026;
+}
+
+.smallLink:nth-child(2){
+    margin-right: 20px;
+}
+
+.smallLink{
+    color: #000026;
+    text-decoration: none; 
+    font-family:'regularFont';
+    font-size: 14px;
+}
+
+.langBtn{
+  padding: 4px;
+  font-family:'regularFont';
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+.langBtnActive{
+  padding: 5px;
+  font-family:'boldFont';
+  background-color: white;
+  color: #000026;
+  border: none;
+}
+
+.langSelect{
+    background-color: transparent;
+    color:white;
+    padding: 3px;
+}
+
+.langSelect option{
+    color: #000026;
+}
+
+

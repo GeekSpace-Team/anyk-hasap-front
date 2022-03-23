@@ -1,0 +1,15 @@
+.imgContainerAbout img{
+width: 100%;
+}
+.frameTitle{
+    font-weight: 600;
+    color: #000026;
+    font-family: 'regularFont';
+}
+.imgAboutUs img  {
+    /* background-image: url(../../../../../public/img/aboutUsImg.png); */
+    background-size: cover;
+     background-repeat: no-repeat;
+     /* height: 50vh;
+     width: 100%; */
+}

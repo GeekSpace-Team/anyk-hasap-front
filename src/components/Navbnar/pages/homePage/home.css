@@ -1,0 +1,209 @@
+.homeFirstContianer{
+    background-image: url(../../../../../public/img/homepage1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.transparent{
+    background: linear-gradient(89.98deg, rgba(42, 35, 86, 0.3) -3.37%, rgba(42, 35, 86, 0) 103.15%);
+    backdrop-filter: blur(3px);
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+
+.homePageLabel{
+    width: 50%;
+}
+
+.lableName{
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 3vw;
+    font-family: 'semiBold';
+   
+}
+.homePageLabel p {
+    font-size: 1vw;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 6%;
+    font-family: 'regularFont';
+}
+.learnMoreButton  {
+    width: 100%;
+    margin-top: 6%;
+}
+.learnMoreButton button {
+    color: #FFFFFF;
+    padding-top: 1%;
+    cursor: pointer;
+    padding-bottom: 1%;
+    padding-left: 4%;
+    padding-right: 4%;
+    font-size: 1vw;
+    background: linear-gradient(89.98deg, rgba(42, 35, 86, 0.3) -3.37%, rgba(42, 35, 86, 0) 103.15%);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    font-family: 'regularFont';
+}
+.learnMoreButton button:hover{
+    background-color: #00002656;
+}
+
+.learnMoreButton img {
+    padding-left: 10px;
+}
+.homeSecondContainer{
+    padding-top: 60px;
+}
+.ourServ{
+    display: flex;
+    justify-content: center;
+}
+.ourServ label {
+    font-family: 'semiBold';
+    font-size: 3vw;
+    text-transform: uppercase;
+}
+.aboutServ{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.homeInfoContainer{
+    padding-top: 30px;
+}
+.infoItems{
+    display: flex;
+    justify-content: space-around;
+}
+
+.aboutServ {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.aboutServ p {
+    color: #2A2456;
+    font-size: 16px;
+    font-family: 'regularFont';
+}
+.infoTitle{
+    padding-top: 15px;
+}
+.infoTitle label {
+    text-transform: uppercase;
+    color: #2A2456;
+    font-size: 18px;
+    font-family: 'regularFont';
+}
+.infoTitle p {
+    padding-top: 7px;
+    color: #2A2456;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'lightFont';
+}
+.aboutUsPhoto {
+    background-image: url(../../../../../public/img/aboutUs.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: auto;
+     margin-top: 35px;
+     margin-bottom: 40px;
+}
+#secondLearnButton{
+    padding-bottom: 40px;
+}
+.homeAboutUsContainer {
+    width: 50%;
+    padding-top: 30px;
+}
+.underLineE{
+    width: 140px;
+    background-color: #AA323C;
+    height: 2px;
+}
+.homeAboutUsContainer label {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-family: 'semiBold';
+}
+.homeAboutUsContainer p {
+    color: white;
+    font-size: 1vw;
+    font-family: 'regularFont';
+    text-align: justify;
+}
+.underLine{
+    width: 45%;
+    height: 2px;
+    background-color: #AA323C;
+
+}
+
+.homeAboutUsContainer2{
+    display: wrap;
+}
+
+@media screen and (max-width: 768px){
+    .homePageLabel{
+        width:100%;
+    }
+    .lableName{
+        font-size: 30px;
+    }
+    .aboutServ{
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    .ourServ label {
+        font-size: 30px;
+    }
+    .homePageLabel p{
+        font-size: 12px;
+    }
+    .learnMoreButton button{
+        font-size: 12px;
+        display: block;
+        align-items: baseline;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    .homeAboutUsContainer label {
+        font-size: 30px;
+    }
+    .homeAboutUsContainer p {
+        font-size: 16px;
+    }
+
+    .infoItems{
+        text-align: center;
+    }
+    .homeAboutUsContainer{
+        width: 100%;
+    }
+    .aboutUsPhoto{
+        background-size: cover;
+        background-position: 100%;
+        background-repeat: no-repeat;
+       
+    }
+    
+    .underLineE{
+        width: 110px;
+    }
+    .underLine{
+        width: 50%;
+    }
+    .mediaTransparent{
+        background-color: rgba(0, 0, 0, 0.548);
+        height: auto;
+    }
+}
