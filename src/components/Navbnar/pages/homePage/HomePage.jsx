@@ -39,12 +39,6 @@ const HomePage = () => {
       <Container maxWidth="lg">
       <div className='homeSecondContainer'>
         <div className='ourServ'>
-          {/* <Stack direction={'column'} spacing={1}>
-          <label>{t('OurServices')}</label>
-          <Stack justifyContent={'center'} alignItems='center'>
-          <div className='underLineE'></div>
-          </Stack>
-          </Stack> */}
           <NavMenu>
           <span>{t('OurServices')}</span>
           </NavMenu>
@@ -55,12 +49,9 @@ const HomePage = () => {
       </div>
       </Container>
 
-      {/* Second container */}
       <Container maxWidth="lg">
         <div className='homeInfoContainer'>
           <Grid container spacing={{ xs: 2, md: 3 }}>
-
-
             <Grid item xs={12} sm={6} md={6} lg={4}>
               <Grid container className='infoItems'>
                 <Grid item sm={12} lg={4} alignItems={'center'} className="infoImgContainer">
@@ -144,10 +135,9 @@ const HomePage = () => {
       <div className="mediaTransparent">
         <Container maxWidth="lg">
           <Stack direction={'column'}>
-            <div className="homeAboutUsContainer homeAboutUsContainer2">
-              <label>{t('Aboutus')}</label><br/>
-                <div className='underLine'></div>
-            </div>
+            <AboutUs>
+          <span style={{color:'white'}}>{t('Aboutus')}</span>
+          </AboutUs>
             
             <div className='homeAboutUsContainer'>
               <p>{t('homeAboutUsText')}</p><br />
@@ -175,24 +165,50 @@ export default HomePage
 
 const NavMenu = styled.div`
 display: flex;
-flex: 1;
-margin-left: 25px;
 align-items: center;
-
+justify-content:center;
 
 span {
-    fontsize: 13px;
+    font-size: 33px;
     letter-spacing: 1.42px;
-    margin-left: 5px;
     position: relative;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: regularFont;
 
     &:after{
       content:"";
       height:2px;
-      background:#000026;
+      background:#AA323C;
       left: 0;
       right: 0;
-      transform: scaleX(0.7);
+      transform: scaleX(0.6);
+      bottom: -6px;
+      position: absolute;
+    }
+}
+`
+const AboutUs = styled.div`
+display: flex;
+align-items: center;
+margin-top: 20px;
+span {
+    font-size: 33px;
+    letter-spacing: 1.42px;
+    position: relative;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: regularFont;
+
+    &:after{
+      content:"";
+      height:2px;
+      background:#AA323C;
+      left: 0;
+      right: 0;
+      transform: scaleX(0.6);
       bottom: -6px;
       position: absolute;
     }

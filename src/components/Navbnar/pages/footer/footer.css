@@ -8,6 +8,19 @@
     font-family:'regularFont';
     font-size:16px;
 }
-
-
+@media (max-width: 768px)
+{
+    .navMedia {
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    .servMedia {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .contactMedia{
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+}
 

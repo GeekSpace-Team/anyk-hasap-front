@@ -10,7 +10,10 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import FooTter from '../footer/FooTter';
-import Occardion from './occardion/Occardion';
+import styled from 'styled-components'
+import ContactUs from '../homePage/contactUs/ContactUs';
+import AccorDion from './occardion/AccorDion';
+
 
 const OurServices = () => {
   const { t } = useTranslation();
@@ -35,48 +38,23 @@ const OurServices = () => {
       </div>
       <Container maxWidth="lg">
         <div className='homeSecondContainer'>
-          <div className='ourServ'>
+          {/* <div className='ourServ'>
             <Stack direction={'column'} spacing={1}>
               <label>{t('OurServices')}</label>
               <Stack justifyContent={'center'} alignItems='center'>
                 <div className='underLineE'></div>
               </Stack>
             </Stack>
-          </div>
+          </div> */}
+          <TitleName>
+            <span>{t('OurServices')}</span>
+          </TitleName>
           <div className='aboutServ'>
             <p>{t('ourServicText')}</p>
           </div>
         </div>
-        {/* <Grid container>
-          <Grid lg={12} md={12} sm={12} xs={12}>
-            <Stack direction='row'>
-              <img src="./img/firstImg.png" alt="" />
-              <Grid item sm={12} lg={7} className="infoTitle">
-                <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
-                  <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel1bh-content"
-                    id="panel1bh-header"
-                  >
-                    <Stack direction='column' spacing={2}>
-                      <label>{t('homeInfoTitle')}</label>
-                    <p>{t('ourServicText')}</p>
-                    </Stack>
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    <Stack direction='column' spacing={2}>
-                      <p>{t('ourServicText')}</p>
-                      <p>{t('ourServicText')}</p>
-                      <p>{t('ourServicText')}</p>
-                      </Stack>
-                  </AccordionDetails>
-                </Accordion>
-              </Grid>
-            </Stack>
-
-          </Grid>
-        </Grid> */}
-<Occardion />
+        <AccorDion />
+        <ContactUs />
       </Container>
       <FooTter />
     </div>
@@ -84,3 +62,30 @@ const OurServices = () => {
 }
 
 export default OurServices
+
+const TitleName = styled.div`
+display: flex;
+align-items: center;
+justify-content:center;
+
+span {
+    font-size: 33px;
+    letter-spacing: 1.42px;
+    position: relative;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: regularFont;
+
+    &:after{
+      content:"";
+      height:2px;
+      background:#AA323C;
+      left: 0;
+      right: 0;
+      transform: scaleX(0.6);
+      bottom: -6px;
+      position: absolute;
+    }
+}
+`

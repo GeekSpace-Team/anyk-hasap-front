@@ -3,11 +3,14 @@ import React, { useEffect } from 'react'
 import { useTranslation } from "react-i18next";
 import Navbar from '../../Navbar';
 import DemoCarousel from '../carousel/DemoCarousel';
-import './aboutUs.css'
 import Container from '@mui/material/Container';
 import { i18n } from '../../../../Language/LangConfig';
 import Customer from '../homePage/customer/Customer';
 import FooTter from '../footer/FooTter';
+import styled from 'styled-components'
+import ContactUs from '../homePage/contactUs/ContactUs';
+import './aboutUs.css'
+
 
 const AboutUs = () => {
   const { t } = useTranslation();
@@ -21,25 +24,19 @@ const AboutUs = () => {
   }, []);
   return (
     <div>
-      {/* <h1>{t('Aboutus')}</h1> */}
       <div className="imgContainerAbout">
         <img src='./img/aboutUs.png' />
       </div>
       <Container maxWidth="lg">
-        <div className='ourServ'>
-          <Stack direction={'column'} marginTop={7} spacing={1}>
-            <label>{t('Aboutus')}</label>
-            <Stack justifyContent={'center'} alignItems='center'>
-              <div className='underLineE'></div>
-            </Stack>
-          </Stack>
-        </div>
+        <AboutUsss>
+          <span>{t('Aboutus')}</span>
+        </AboutUsss>
         <Grid container>
           <Grid item lg={4} md={6} xs={12} sm={6}> 
-          <Stack direction='column' spacing={2} justifyContent='center' marginTop={7} alignItems='center'>
+          <Stack direction='column'  spacing={2} justifyContent='center' marginTop={7} alignItems='center'>
             <img src="./img/aboutFrame.png" style={{ width: '110px' }} alt="" />
             <label className='frameTitle'>Lorem ipsium dolor.</label>
-          </Stack>
+          </Stack> 
           </Grid>
           <Grid item lg={4} md={6} xs={12} sm={6}>
           <Stack direction='column' spacing={2} justifyContent='center' marginTop={7} alignItems='center'>
@@ -102,7 +99,7 @@ const AboutUs = () => {
         {/* </Stack> */}
       </Container>
 
-
+      <ContactUs />
       <Customer />
       <DemoCarousel />
       <FooTter />
@@ -110,4 +107,41 @@ const AboutUs = () => {
   )
 }
 
+//    Meyilnama (Karhana we onun gornusleri. Telekecilik)
+//  1 Karhana barada dusunje, 
+//  2 Karhananyn gornusleri,
+//  3 Karhananyn hojalyk hasaplasyk tajircilik isleri we olary guramagyn yorelgeri, 
+//  4 Onumciligin karende gornusinde guralyshy, 
+//  5 Telekecilik hojalygy guramagyn gornuusi hokmunde.
+
 export default AboutUs
+
+
+
+const AboutUsss = styled.div`
+display: flex;
+align-items: center;
+justify-content:center;
+margin-top: 30px;
+
+span {
+    font-size: 33px;
+    letter-spacing: 1.42px;
+    position: relative;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: regularFont;
+
+    &:after{
+      content:"";
+      height:2px;
+      background:#AA323C;
+      left: 0;
+      right: 0;
+      transform: scaleX(0.65);
+      bottom: -6px;
+      position: absolute;
+    }
+}
+`

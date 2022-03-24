@@ -1,0 +1,48 @@
+.wrapper {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.accordion {
+    width: 500px;
+}
+
+.item {
+    background-color: #f0ebe1;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+}
+
+.title{
+    color: #85662b;
+}
+.content{
+    color: #8b7f75;
+}
+
+.accordionTitle{
+    text-transform: uppercase;
+    color: #2A2456;
+    font-family: 'regularFont';
+    letter-spacing: 0.5px;
+    margin-left: -2%;
+}
+.accText {
+    color: #2A2456;
+    font-family: 'regularFont';
+    margin-left: -3%;
+    line-height: 40px;
+}
+.accMore{
+    margin-bottom: 3%;
+    background-color: #FDFDFD;
+    padding: 20px;
+}
+.accMore li {
+    color: #2A2456;
+    font-family: 'regularFont';
+}

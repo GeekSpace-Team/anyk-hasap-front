@@ -6,7 +6,7 @@ import './carousel.css'
 
 const DemoCarousel = () => {
     var settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         slidesToShow: 6,
         slidesToScroll: 7,
@@ -20,7 +20,7 @@ const DemoCarousel = () => {
                 slidesToShow: 3,
                 slidesToScroll: 3,
                 infinite: true,
-                dots: true
+                dots: false
               }
             },
             {
@@ -34,15 +34,15 @@ const DemoCarousel = () => {
             {
               breakpoint: 480,
               settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToShow: 2,
+                slidesToScroll: 2
               }
             }
           ]
       };
   return (
     <div>
-        <Slider {...settings} style={{width:'98%'}}>
+        <Slider {...settings} style={{width:'98%', padding:'20px', marginBottom:'-35px'}}>
            
           
           <div className='carouselItem'>

@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react'
-import './contactUs.css'
 import Container from '@mui/material/Container';
 import { useTranslation } from "react-i18next";
 import { Grid, Stack } from '@mui/material';
 import { i18n } from '../../../../../Language/LangConfig';
+import styled from 'styled-components'
+import './contactUs.css'
 
 const ContactUs = () => {
     const { t } = useTranslation();
@@ -23,12 +24,9 @@ const ContactUs = () => {
             </div> */}
             <Container maxWidth="lg">
                 <div className='ourServ'>
-                    <Stack direction={'column'} spacing={1}>
-                        <label>{t('contactUs')}</label>
-                        <Stack justifyContent={'center'} alignItems='center'>
-                            <div className='underLineE'></div>
-                        </Stack>
-                    </Stack>
+                    <ContactUsss>
+                        <span>{t('contactUs')}</span>
+                    </ContactUsss>
                 </div>
                 <div className='aboutServ'>
                     <p>{t('underContactUs')}</p>
@@ -65,7 +63,7 @@ const ContactUs = () => {
                         </Grid>
                         </Stack>
                         <Grid item lg={12} md={12} xs={12} sm={12}>
-                            <a href="https://yandex.ru/maps/org/nomera_mezhdunarodnykh_aeroportov_turkmenistana/54860423407/?utm_medium=mapframe&utm_source=maps" ></a><iframe src="https://yandex.ru/map-widget/v1/-/CCUBY8A2lC" style={{outline:'none',border:'none'}} width='90%' height="250" frameborder="5" allowfullscreen="true"></iframe>
+                            <a href="https://yandex.ru/maps/org/nomera_mezhdunarodnykh_aeroportov_turkmenistana/54860423407/?utm_medium=mapframe&utm_source=maps" ></a><iframe src="https://yandex.ru/map-widget/v1/-/CCUBY8A2lC" style={{outline:'none',border:'none', marginBottom:'50px'}} width='90%' height="250" frameborder="5" allowfullscreen="true"></iframe>
                         </Grid>
                     </Grid>
 
@@ -94,7 +92,7 @@ const ContactUs = () => {
                         </Grid>
                         <Grid item lg={12} md={12} xs={12} sm={12}>
                             <div className='sendButton'>
-                                <button>Send message<img src="./img/rightArrow.svg" style={{ color: '#000026' }} /></button>
+                                <button>Send message  <span>></span></button>
                             </div>
                         </Grid>
                     </Grid>
@@ -105,3 +103,34 @@ const ContactUs = () => {
 }
 
 export default ContactUs
+
+
+
+
+const ContactUsss = styled.div`
+display: flex;
+align-items: center;
+justify-content:center;
+margin-top: 30px;
+
+span {
+    font-size: 33px;
+    letter-spacing: 1.42px;
+    position: relative;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: regularFont;
+
+    &:after{
+      content:"";
+      height:2px;
+      background:#AA323C;
+      left: 0;
+      right: 0;
+      transform: scaleX(0.6);
+      bottom: -6px;
+      position: absolute;
+    }
+}
+`

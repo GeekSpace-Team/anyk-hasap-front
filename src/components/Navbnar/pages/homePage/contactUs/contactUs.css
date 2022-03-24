@@ -35,7 +35,11 @@ textarea{
     border-bottom: 1px solid #000026;
 }
 .sendButton {
-    margin-top: 50px;
+    margin-top: 90px;
+}
+.sendButton span {
+    margin-left: 10px;
+    height: 40px;
 }
 .sendButton button{
     width: 170px;
@@ -44,4 +48,10 @@ textarea{
     height: 35px;
     font-family: 'regularFont';
     color: #000026;
+}
+
+@media (max-width: 768px) {
+    .sendButton {
+        margin-bottom: 30px;
+    }
 }

@@ -39,7 +39,7 @@ const FooTter = () => {
                         <img src="./img/AnykLogo.svg" alt="#" />
                     </Grid>
                     <Grid lg={3} md={6} xs={12} sm={12}>
-                    <Stack direction={'column'} spacing={2}>
+                    <Stack direction={'column'} spacing={2} className='navMedia'>
                                     <label className='footerTitle'>Navigation</label>
                                     <br />
                                     <NavLink to="/" className='navBarItem'>
@@ -57,7 +57,7 @@ const FooTter = () => {
                                 </Stack>
                     </Grid>
                     <Grid lg={3} md={6} xs={12} sm={12}>
-                        <Stack direction={'column'} spacing={2}>
+                        <Stack direction={'column'} spacing={2} className='servMedia'>
                             <label className='footerTitle'>Our services</label>
                             <br />
                             <label className='footerTitle'>Lorem ipsium</label>
@@ -69,7 +69,7 @@ const FooTter = () => {
                         </Stack>
                     </Grid>
                     <Grid lg={3} xs={12} md={6} sm={12}>
-                        <Stack direction='column' spacing={3}>
+                        <Stack direction='column' spacing={3} className='contactMedia'>
                             <label className='footerTitle'>Contacts</label>
                             <br />
                             <Stack direction={'row'} spacing={2}>
