@@ -50,8 +50,31 @@ textarea{
     color: #000026;
 }
 
+.sendMessage button{
+    text-transform: capitalize;
+    color: #000026;
+    font-family: 'regularFont';
+    border: 1px solid #000026;
+}
+.sendMessage button:hover{
+    border: 1px solid black;
+}
+
+ .textFielddd__label {
+     color: #000026 !important;
+     font-family: 'regularFont';
+ }
+
+
+.inputText input:focus{
+    color: #000026;
+    font-family: 'regularFont';
+    /* border-bottom: 1px solid #000026; */
+    border-bottom-color: #000026;
+}
+
 @media (max-width: 768px) {
-    .sendButton {
+    .sendMessage {
         margin-bottom: 30px;
     }
 }
