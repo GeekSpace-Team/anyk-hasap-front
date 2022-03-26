@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import Container from '@mui/material/Container';
 import { useTranslation } from "react-i18next";
 import { Grid, Stack } from '@mui/material';
@@ -6,35 +6,17 @@ import { i18n } from '../../../../../Language/LangConfig';
 import styled from 'styled-components'
 import TextField from '@mui/material/TextField';
 import './contactUs.css';
-// import { MuiThemeProvider, createTheme } from '@material-ui/core/styles';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Button from '@mui/material/Button';
-import { makeStyles } from '@mui/material';
-
-
-// const theme = createTheme({
-//     palette: {
-//         secondary: {
-//             main: '#E33E7F'
-//         }
-//     }
-// });
-
-const useStyles = makeStyles(theme => ({
-    root: {
-        "& > *" : {
-            margin: theme.spacing(1),
-            width: '25ch'
-        }
-    },
-    textField : {
-        border: "1px solid red",
-    }
-}));
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { showError, showSuccess, showWarning } from '../../../../../toast/toast';
 
 
 const ContactUs = () => {
     const { t } = useTranslation();
+    const form = useRef();
     useEffect(() => {
         let l = localStorage.getItem('lang');
         if (l != null && typeof l !== 'undefined') {
@@ -43,13 +25,30 @@ const ContactUs = () => {
             i18n.changeLanguage("en");
         }
     }, []);
-    const classes = useStyles();
+
+    const [username, setUsername] = useState('');
+    const [mail, setMail] = useState('');
+    const [message, setMessage] = useState('');
+    const sendEmail = (e) => {
+        if (username == '' || mail == '' || message == '') {
+            showWarning("Please enter required informations!");
+            return;
+          }
+        e.preventDefault();
+        emailjs.sendForm('service_y72iqna', 'template_5d1bbko', form.current, 'w--8F8ypQmjt_fscB')
+            .then((result) => {
+                showSuccess('Successfully sended !!!');
+                setUsername('');
+                setMail('');
+                setMessage('');
+                console.log(result.text);
+            }, (error) => {
+                showError(error.text + "Something is went wrong !!!")
+                console.log(error.text);
+            });
+    };
     return (
         <div>
-            {/* <div className="homeAboutUsContainer">
-                <label>{t('Aboutus')}</label><br /><br />
-                <div className='underLine'></div> <br />
-            </div> */}
             <Container maxWidth="lg">
 
 
@@ -101,37 +100,40 @@ const ContactUs = () => {
 
 
                     <Grid item lg={6} md={6} xs={12} sm={12} pl={2} mt={9}>
-
-                        <Grid item lg={12} md={12} xs={12} sm={12}>
-                            <Stack spacing={1.5} className='inputText'>
-                                {/* <MuiThemeProvider theme={theme}> */}
-                                    <TextField id="standard-basic" className={classes.textField} variant="standard" label="Name" InputLabelProps={{className:'textFielddd__label'}} />
-                                {/* </MuiThemeProvider> */}
-                            </Stack>
-                        </Grid>
-                        <Grid item lg={12} md={12} xs={12} sm={12}>
-                            <Stack spacing={1.5} marginTop={3}>
-                                <TextField id="standard-basic" label="E-mail" InputLabelProps={{className:'textFielddd__label'}} variant="standard" />
-                            </Stack>
-                        </Grid>
-                        <Grid item lg={12} md={12} xs={12} sm={12}>
-                            <Stack spacing={1.5} marginTop={3}>
-                                <TextField id="standard-multiline-static" InputLabelProps={{className:'textFielddd__label'}} multiline rows={4} label='Text' variant="standard" />
-                            </Stack>
-                        </Grid>
-                        <Grid item lg={12} md={12} xs={12} sm={12}>
-                            {/* <div className='sendButton'> */}
+                        <form ref={form} onSubmit={sendEmail}>
+                            <Grid item lg={12} md={12} xs={12} sm={12}>
+                                <Stack spacing={1.5} className='inputText'>
+                                    {/* <MuiThemeProvider theme={theme}> */}
+                                    <TextField id="standard-basic" name="user_name" value={username} onChange={e => setUsername(e.target.value)} variant="standard" label="Name" InputLabelProps={{ className: 'textFielddd__label' }} />
+                                    {/* </MuiThemeProvider> */}
+                                </Stack>
+                            </Grid>
+                            <Grid item lg={12} md={12} xs={12} sm={12}>
+                                <Stack spacing={1.5} marginTop={3}>
+                                    <TextField id="standard-basic" type='email' name="user_email" value={mail} onChange={e => setMail(e.target.value)} label="E-mail" InputLabelProps={{ className: 'textFielddd__label' }} variant="standard" />
+                                </Stack>
+                            </Grid>
+                            <Grid item lg={12} md={12} xs={12} sm={12}>
+                                <Stack spacing={1.5} marginTop={3}>
+                                    <TextField id="standard-multiline-static" name="message" value={message} onChange={e => setMessage(e.target.value)} InputLabelProps={{ className: 'textFielddd__label' }} multiline rows={4} label='Text' variant="standard" />
+                                </Stack>
+                            </Grid>
+                            <Grid item lg={12} md={12} xs={12} sm={12}>
+                                {/* <div className='sendButton'> */}
                                 {/* <button>Send message  <span>{'>'}</span></button> */}
                                 <Stack direction={'row'} mt={15} className='sendMessage'>
-                                <Button variant="outlined" endIcon={<ArrowForwardIosIcon style={{height:'11px'}} />}>
-                                    Send message
-                                </Button>
+                                    <Button onClick={sendEmail} type='submit' variant="outlined" endIcon={<ArrowForwardIosIcon style={{ height: '11px' }} />}>
+                                        Send message
+                                    </Button>
                                 </Stack>
-                            {/* </div> */}
-                        </Grid>
+                                {/* </div> */}
+                            </Grid>
+                        </form>
                     </Grid>
+
                 </Grid>
             </Container>
+            <ToastContainer />
         </div>
     )
 }

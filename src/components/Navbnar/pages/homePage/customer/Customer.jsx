@@ -1,7 +1,7 @@
 import React, { useEffect, Component } from 'react'
 import Container from '@mui/material/Container';
 import { useTranslation } from "react-i18next";
-import { Grid, Stack } from '@mui/material';
+import { Grid, Stack } from '@mui/material';      
 import { i18n } from '../../../../../Language/LangConfig';
 import { ConstructionRounded } from '@mui/icons-material';
 import Slider from "react-slick";
@@ -53,17 +53,12 @@ const Customer = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
+
         }
       }
     ]
   }
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1
-  // };
+  
   return (
     <div className='customerReview'>
       <Container maxWidth="lg">

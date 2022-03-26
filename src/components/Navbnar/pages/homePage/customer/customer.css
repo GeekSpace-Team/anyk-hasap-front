@@ -18,17 +18,17 @@
 
 }
 .slick-dots li.slick-active button:before {
-    color: #F8F8F8;
+    color: transparent;
     font-size: 10px;
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 50%;
-    height: 9px;
-    width: 9px;
+    height: 12px;
+    width: 12px;
     margin-top: 2px;
 }
 
 .items{
-    margin-left: 10%;
+    padding: 2%;
 }
 .slick-prev{
     display: none;
@@ -55,3 +55,5 @@ p {
 .customerDiv{
     display: flex;
 }
+
+
