@@ -8,8 +8,14 @@ import Customer from './customer/Customer';
 import DemoCarousel from '../carousel/DemoCarousel';
 import FooTter from '../footer/FooTter';
 import styled from 'styled-components'
+import { NavLink as Link} from 'react-router-dom'
 import './home.css';
 
+
+
+export const NavLink = styled(Link)`
+text-decoration: none;
+`
 
 const HomePage = () => {
   const { t } = useTranslation();
@@ -39,7 +45,10 @@ const HomePage = () => {
               <label className='lableName'>{t('wheretrustmeetsstrategy')}</label>
               <p>{t('homeUnderTitle')}</p>
               <div className='learnMoreButton'>
+                
+                <NavLink to="/ourServices" className='navBarItem'>
                 <button>{t('learnMore')}<img src="./img/rightArrow.svg" /></button>
+                                    </NavLink>
               </div>
             </div>
           </Container>

@@ -40,8 +40,6 @@ const FooTter = () => {
                     </Grid>
                     <Grid lg={3} md={6} xs={12} sm={12}>
                     <Stack direction={'column'} spacing={2} className='navMedia'>
-                                    <label className='footerTitle'>Navigation</label>
-                                    <br />
                                     <NavLink to="/" className='navBarItem'>
                                         {t('homePage')}
                                     </NavLink>
@@ -58,8 +56,6 @@ const FooTter = () => {
                     </Grid>
                     <Grid lg={3} md={6} xs={12} sm={12}>
                         <Stack direction={'column'} spacing={2} className='servMedia'>
-                            <label className='footerTitle'>Our services</label>
-                            <br />
                             <label className='footerTitle'>Lorem ipsium</label>
                             <label className='footerTitle'>Lorem ipsium</label>
                             <label className='footerTitle'>Lorem ipsium</label>
@@ -70,8 +66,6 @@ const FooTter = () => {
                     </Grid>
                     <Grid lg={3} xs={12} md={6} sm={12}>
                         <Stack direction='column' spacing={3} className='contactMedia'>
-                            <label className='footerTitle'>Contacts</label>
-                            <br />
                             <Stack direction={'row'} spacing={2}>
                                 <img src='./img/mobileFooter.svg' style={{ height: '18px' }} />
                                 <a href='tel:+99365656565' style={{ textDecoration: 'none' }} className='footerTitle'>+993 65 65 65 65</a>
