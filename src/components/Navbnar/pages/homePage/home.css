@@ -111,6 +111,7 @@
     font-weight: 400;
     font-size: 15px;
     font-family: 'lightFont';
+    text-align: left;
 }
 .aboutUsPhoto {
     background-image: url(../../../../../public/img/aboutUs.png);
