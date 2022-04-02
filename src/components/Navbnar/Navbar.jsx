@@ -152,7 +152,7 @@ const Navbar = () => {
           <img src='./img/mail.svg' style={{height:'18px'}}/>
           <a href='mailto:anyk.hasap@gmail.com' className='smallLink'>anyk.hasap@gmail.com</a>
           <img src='./img/phone.svg' style={{height:'18px'}}/>
-          <a href='tel:+99365656565' className='smallLink'>+993 65 65 65 65</a>
+          <a href='tel:+993 (12) 95-50-19' className='smallLink'>+993 (12) 95-50-19</a>
         </Stack>
       </InfoContainer>
       </Container>

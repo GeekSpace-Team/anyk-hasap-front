@@ -13,3 +13,32 @@ width: 100%;
      /* height: 50vh;
      width: 100%; */
 }
+.frameText {
+    font-weight: 600;
+    color: #000026;
+    font-family: 'regularFont';
+    width: 90%;
+}
+
+.circul{
+    border-radius: 50%;
+    background-color: #000026;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.circul span {
+    position: absolute;
+    font-size: 30px;
+}
+@media (max-width: 885px) {
+    .frameText {
+        width: 100%;
+    }
+}

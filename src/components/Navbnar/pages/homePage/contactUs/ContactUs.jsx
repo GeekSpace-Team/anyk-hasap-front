@@ -91,46 +91,35 @@ const ContactUs = () => {
                             </Grid>
                         </Stack>
                         <Grid item lg={12} md={12} xs={12} sm={12}>
-                            <a href="https://yandex.ru/maps/org/nomera_mezhdunarodnykh_aeroportov_turkmenistana/54860423407/?utm_medium=mapframe&utm_source=maps" ></a><iframe src="https://yandex.ru/map-widget/v1/-/CCUBY8A2lC" style={{ outline: 'none', border: 'none', marginBottom: '50px' }} width='90%' height="250" frameborder="5" allowfullscreen="true"></iframe>
+                            <iframe src="https://yandex.ru/map-widget/v1/-/CCUBVYESCD" style={{ outline: 'none', border: 'none', marginBottom: '50px' }} width="90%" height="250" frameborder="1" allowfullscreen="true" ></iframe>
                         </Grid>
                     </Grid>
-
-
-
-
-
                     <Grid item lg={6} md={6} xs={12} sm={12} pl={2} mt={9}>
                         <form ref={form} onSubmit={sendEmail}>
                             <Grid item lg={12} md={12} xs={12} sm={12}>
                                 <Stack spacing={1.5} className='inputText'>
-                                    {/* <MuiThemeProvider theme={theme}> */}
-                                    <TextField id="standard-basic" name="user_name" value={username} onChange={e => setUsername(e.target.value)} variant="standard" label="Name" InputLabelProps={{ className: 'textFielddd__label' }} />
-                                    {/* </MuiThemeProvider> */}
+                                    <TextField id="standard-basic" name="user_name" value={username} onChange={e => setUsername(e.target.value)} variant="standard" label="Name" InputLabelProps={{ className: 'textFielddd__label' }} required/>
                                 </Stack>
                             </Grid>
                             <Grid item lg={12} md={12} xs={12} sm={12}>
                                 <Stack spacing={1.5} marginTop={3}>
-                                    <TextField id="standard-basic" type='email' name="user_email" value={mail} onChange={e => setMail(e.target.value)} label="E-mail" InputLabelProps={{ className: 'textFielddd__label' }} variant="standard" />
+                                    <TextField id="standard-basic" type='email' name="user_email" value={mail} onChange={e => setMail(e.target.value)} label="E-mail" InputLabelProps={{ className: 'textFielddd__label' }} variant="standard" required/>
                                 </Stack>
                             </Grid>
                             <Grid item lg={12} md={12} xs={12} sm={12}>
                                 <Stack spacing={1.5} marginTop={3}>
-                                    <TextField id="standard-multiline-static" name="message" value={message} onChange={e => setMessage(e.target.value)} InputLabelProps={{ className: 'textFielddd__label' }} multiline rows={4} label='Text' variant="standard" />
+                                    <TextField id="standard-multiline-static" name="message" value={message} onChange={e => setMessage(e.target.value)} InputLabelProps={{ className: 'textFielddd__label' }} multiline rows={4} label='Text' variant="standard" required/>
                                 </Stack>
                             </Grid>
                             <Grid item lg={12} md={12} xs={12} sm={12}>
-                                {/* <div className='sendButton'> */}
-                                {/* <button>Send message  <span>{'>'}</span></button> */}
                                 <Stack direction={'row'} mt={15} className='sendMessage'>
                                     <Button onClick={sendEmail} type='submit' variant="outlined" endIcon={<ArrowForwardIosIcon style={{ height: '11px' }} />}>
                                         Send message
                                     </Button>
                                 </Stack>
-                                {/* </div> */}
                             </Grid>
                         </form>
                     </Grid>
-
                 </Grid>
             </Container>
             <ToastContainer />

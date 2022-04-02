@@ -78,7 +78,7 @@ const FooTter = () => {
                             </Stack>
                             <Stack direction={'row'} spacing={2}>
                                 <img src='./img/phoneFooter.svg' style={{ height: '18px' }} />
-                                <a href='tel:+99312454545' style={{ textDecoration: 'none' }} className='footerTitle'>+993 12 45 45 45</a>
+                                <a href='tel:+993 (12) 95-50-19' style={{ textDecoration: 'none' }} className='footerTitle'>+993 (12) 95-50-19</a>
                             </Stack>
                             <Stack direction={'row'} spacing={2}>
                                 <img src='./img/mailFooter.svg' style={{ height: '18px' }} />
@@ -86,13 +86,13 @@ const FooTter = () => {
                             </Stack>
                             <Stack direction={'row'} spacing={2}>
                                 <img src='./img/locationFooter.svg' style={{ height: '18px' }} />
-                                <a href='mailto:anyk.hasap@gmail.com' style={{ textDecoration: 'none' }} className='footerTitle'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                                <a href='mailto:anyk.hasap@gmail.com' style={{ textDecoration: 'none' }} className='footerTitle'>Aşgabat şäheri, Oguzhan köçesi, 203-nji jaýy</a>
                             </Stack>
                         </Stack>
                     </Grid>
                 </Grid>
             </Container>
-            <Stack justifyContent={'center'} alignItems={'center'}>
+            <Stack alignItems={'center'} paddingBottom={2}>
                 <label className='footerTitle'>@2022</label>
             </Stack>
         </div>

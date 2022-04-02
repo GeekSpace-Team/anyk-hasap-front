@@ -28,6 +28,8 @@
     font-size: 1vw;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-left: -13px;
+    line-height: 1.5;
     margin-top: 6%;
     font-family: 'regularFont';
 }
@@ -37,11 +39,11 @@
 }
 .learnMoreButton button {
     color: #FFFFFF;
-    padding-top: 1%;
+    padding-top: 1.5%;
     cursor: pointer;
-    padding-bottom: 1%;
-    padding-left: 4%;
-    padding-right: 4%;
+    padding-bottom: 1.5%;
+    padding-left: 5%;
+    padding-right: 5%;
     font-size: 1vw;
     background: linear-gradient(89.98deg, rgba(42, 35, 86, 0.3) -3.37%, rgba(42, 35, 86, 0) 103.15%);
     border: 1px solid #FFFFFF;
@@ -99,7 +101,8 @@
 .infoTitle label {
     text-transform: uppercase;
     color: #2A2456;
-    font-size: 18px;
+    font-size: 14px;
+    font-weight: 600;
     font-family: 'regularFont';
 }
 .infoTitle p {
@@ -138,6 +141,7 @@
 .homeAboutUsContainer p {
     color: white;
     font-size: 1vw;
+    margin-left: -13px;
     font-family: 'regularFont';
     text-align: justify;
 }

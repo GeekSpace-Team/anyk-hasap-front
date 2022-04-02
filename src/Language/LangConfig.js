@@ -23,6 +23,7 @@ i18n
             "contactUs": "Contact us",
             "underContactUs":"If you have any questions or need any assistance  ",
             "customerReviews": "Customer Reviews",
+            "sendMessage":"Successfully sended",
             "ourServicText":"The pain itself is love, the main storage system. The lake wants the arrows, until the main street is aligned with the venomous quiver. From the football, if not, the price is important.",
           }
       },
@@ -41,6 +42,7 @@ i18n
             "contactUs":"Habarlaşmak",
             "underContactUs":"Soraglaryňyz bar bolsa ýa-da kömek gerek bolsa",
             "customerReviews":"müşderi synlary",
+            "sendMessage":"üstünlikli iberildi",
             "ourServicText":"Agyrynyň özi esasy saklaýyş ulgamy bolan söýgi. Köl esasy köçäni zäherli titreýänçä, oklary isleýär. Futboldan, bolmasa, bahasy möhümdir.",
 
         }
@@ -60,6 +62,7 @@ i18n
             "contactUs":"связаться с нами",
             "underContactUs":"Если у вас есть какие-либо вопросы или вам нужна помощь",
             "customerReviews":"Отзывы клиентов",
+            "sendMessage":"успешно отправлено",
             "ourServicText":"Сама боль и есть любовь, главная система хранения. Озеру нужны стрелы, пока главная улица не выровняется с ядовитым колчаном. От футбола, если нет, то цена важна.",
             
         }

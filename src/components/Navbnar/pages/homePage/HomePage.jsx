@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react'
-import './home.css';
+import React, { useEffect, useState } from 'react'
 import Container from '@mui/material/Container';
 import { useTranslation } from "react-i18next";
 import { Grid, Stack } from '@mui/material';
@@ -9,6 +8,7 @@ import Customer from './customer/Customer';
 import DemoCarousel from '../carousel/DemoCarousel';
 import FooTter from '../footer/FooTter';
 import styled from 'styled-components'
+import './home.css';
 
 
 const HomePage = () => {
@@ -21,6 +21,15 @@ const HomePage = () => {
       i18n.changeLanguage("en");
     }
   }, []);
+
+  const [clicked, setClicked] = useState(false);
+
+  const toggle = index => {
+    if (clicked === index) {
+      return setClicked(null)
+    }
+    setClicked(index)
+  }
   return (
     <div>
       <div className='homeFirstContianer'>
@@ -37,16 +46,16 @@ const HomePage = () => {
         </div>
       </div>
       <Container maxWidth="lg">
-      <div className='homeSecondContainer'>
-        <div className='ourServ'>
-          <NavMenu>
-          <span>{t('OurServices')}</span>
-          </NavMenu>
+        <div className='homeSecondContainer'>
+          <div className='ourServ'>
+            <NavMenu>
+              <span>{t('OurServices')}</span>
+            </NavMenu>
+          </div>
+          <div className='aboutServ'>
+            <p>{t('homeUnderTitle')}</p>
+          </div>
         </div>
-        <div className='aboutServ'>
-          <p>{t('homeUnderTitle')}</p>
-        </div>
-      </div>
       </Container>
 
       <Container maxWidth="lg">
@@ -58,8 +67,10 @@ const HomePage = () => {
                   <img src="./img/firstImg.png" alt="" />
                 </Grid>
                 <Grid item sm={12} lg={7} className="infoTitle">
-                  <label>{t('homeInfoTitle')}</label>
-                  <p>{t('homeInfoText')}</p>
+                  {/* <label>{t('homeInfoTitle')}</label> */}
+                  <label>Обязательный аудит</label>
+                  {/* <p>{t('homeInfoText')}</p> */}
+                  <p>Аудиторская компания «Anyk Hasap» с 2018 года предоставляет широкий спектр услуг в области аудита, бухгалтерского учета, налогообложения и управленческого консультирования.</p>
                 </Grid>
               </Grid>
             </Grid>
@@ -71,8 +82,10 @@ const HomePage = () => {
                   <img src="./img/secondImg.png" alt="" />
                 </Grid>
                 <Grid item sm={12} lg={7} className="infoTitle">
-                  <label>{t('homeInfoTitle')}</label>
-                  <p>{t('homeInfoText')}</p>
+                  {/* <label>{t('homeInfoTitle')}</label> */}
+                  <label>Инициативный аудит</label>
+                  {/* <p>{t('homeInfoText')}</p> */}
+                  <p>Аудиторы «Anyk Hasap», имеют более 20-и лет стажа безупречной работы в сфере аудита, бухгалтерского учета и налогового консультирования в организациях различных сфер деятельности, аудиторы в штате — все надёжные профессионалы.</p>
                 </Grid>
               </Grid>
             </Grid>
@@ -83,8 +96,10 @@ const HomePage = () => {
                   <img src="./img/thirdImg.png" alt="" />
                 </Grid>
                 <Grid item sm={12} lg={7} className="infoTitle">
-                  <label>{t('homeInfoTitle')}</label>
-                  <p>{t('homeInfoText')}</p>
+                  {/* <label>{t('homeInfoTitle')}</label> */}
+                  <label>Налоговое консультирование</label>
+                  {/* <p>{t('homeInfoText')}</p> */}
+                  <p>При выборе аудиторской компании, наряду со стоимостью услуг, важную роль играют деловая репутация и опыт. Поэтому, мы беремся только за ту работу, которую можем выполнить действительно хорошо, с полной ответственностью и гарантией качества!</p>
                 </Grid>
               </Grid>
             </Grid>
@@ -96,8 +111,10 @@ const HomePage = () => {
                   <img src="./img/fourthImg.png" alt="" />
                 </Grid>
                 <Grid item sm={12} lg={7} className="infoTitle">
-                  <label>{t('homeInfoTitle')}</label>
-                  <p>{t('homeInfoText')}</p>
+                  {/* <label>{t('homeInfoTitle')}</label> */}
+                  <label>Управленческое консультирование</label>
+                  {/* <p>{t('homeInfoText')}</p> */}
+                  <p>Лицензия на осуществление аудиторской деятельности выдан Министерством экономики и финансов Туркменистана №1-17-29-50 от 28.12.2021 года.</p>
                 </Grid>
               </Grid>
             </Grid>
@@ -109,8 +126,11 @@ const HomePage = () => {
                   <img src="./img/fifthImg.png" alt="" />
                 </Grid>
                 <Grid item sm={12} lg={7} className="infoTitle">
-                  <label>{t('homeInfoTitle')}</label>
-                  <p>{t('homeInfoText')}</p>
+                  {/* <label>{t('homeInfoTitle')}</label> */}
+                  <label>Оценка надёжности системы внутреннего контроля</label>
+                  {/* <p>{t('homeInfoText')}</p> */}
+                  <p>«Anyk Hasap» стремится принести реальную пользу вашему бизнесу, уберечь от ошибок, снизить налоговые и финансовые риски – предоставить услуги высокого качества.
+                  </p>
                 </Grid>
               </Grid>
             </Grid>
@@ -122,8 +142,10 @@ const HomePage = () => {
                   <img src="./img/sixthImg.png" alt="" />
                 </Grid>
                 <Grid item sm={12} lg={7} className="infoTitle">
-                  <label>{t('homeInfoTitle')}</label>
-                  <p>{t('homeInfoText')}</p>
+                  {/* <label>{t('homeInfoTitle')}</label> */}
+                  <label>Калькуляции</label>
+                  {/* <p>{t('homeInfoText')}</p> */}
+                  <p>Аудиторская компания «Anyk Hasap» с 2018 года предоставляет широкий спектр услуг в области аудита, бухгалтерского учета, налогообложения и управленческого консультирования.</p>
                 </Grid>
               </Grid>
             </Grid>
@@ -132,23 +154,32 @@ const HomePage = () => {
         </div>
       </Container>
       <div className='aboutUsPhoto'>
-      <div className="mediaTransparent">
-        <Container maxWidth="lg">
-          <Stack direction={'column'}>
-            <AboutUs>
-          <span style={{color:'white'}}>{t('Aboutus')}</span>
-          </AboutUs>
-            
-            <div className='homeAboutUsContainer'>
-              <p>{t('homeAboutUsText')}</p><br />
-              <p>{t('homeAboutUsText')}</p>
-            </div>
-            <div id='secondLearnButton' className='learnMoreButton'>
-              <button>{t('learnMore')}<img src="./img/rightArrow.svg" /></button>
-            </div>
-          </Stack>
-        </Container>
-      </div>
+        <div className="mediaTransparent">
+          <Container maxWidth="lg">
+            <Stack direction={'column'}>
+              <AboutUs>
+                <span style={{ color: 'white' }}>{t('Aboutus')}</span>
+              </AboutUs>
+
+              {ServicText.map((item, index) => {
+                return (
+                  <><div className='homeAboutUsContainer'>
+                    <p>Аудиторская компания «Anyk Hasap» с 2018 года предоставляет широкий спектр услуг в области аудита, бухгалтерского учета, налогообложения и управленческого консультирования...</p>
+                      <>
+                    {clicked === index ? (
+                        <p>{item.text1}</p>
+                      ) : null}
+                      </>
+                  </div>
+                    <div id='secondLearnButton' className='learnMoreButton'>
+                      <button onClick={() => toggle(index)} key={index} style={{ paddingTop: '1%', paddingBottom: '1%', paddingRight: '4%', paddingLeft: '4%' }}>{t('learnMore')}<img src="./img/rightArrow.svg" /></button>
+                    </div>
+                  </>
+                )
+              })}
+            </Stack>
+          </Container>
+        </div>
       </div>
       <ContactUs />
       <Customer />
@@ -214,3 +245,11 @@ span {
     }
 }
 `
+const ServicText = [
+
+  {
+    id: '2',
+    text1: 'Аудиторы «Anyk Hasap», имеют более 20-и лет стажа безупречной работы в сфере аудита, бухгалтерского учета и налогового консультирования в организациях различных сфер деятельности, аудиторы в штате — все надёжные профессионалы При выборе аудиторской компании, наряду со стоимостью услуг, важную роль играют деловая репутация и опыт. Поэтому, мы беремся только за ту работу, которую можем выполнить действительно хорошо, с полной ответственностью и гарантией качества! Лицензия на осуществление аудиторской деятельности выдан Министерством экономики и финансов Туркменистана №1-17-29-50 от 28.12.2021 года. «Anyk Hasap» стремится принести реальную пользу вашему бизнесу, уберечь от ошибок, снизить налоговые и финансовые риски – предоставить услуги высокого качества.'
+  }
+
+]
