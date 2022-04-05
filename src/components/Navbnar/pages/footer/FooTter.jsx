@@ -80,7 +80,7 @@ const FooTter = () => {
                             </Stack>
                             <Stack direction={'row'} spacing={2}>
                                 <img src='./img/locationFooter.svg' style={{ height: '18px' }} />
-                                <a href='mailto:anyk.hasap@gmail.com' style={{ textDecoration: 'none' }} className='footerTitle'>Aşgabat şäheri, Oguzhan köçesi, 203-nji jaýy</a>
+                                <a href='mailto:anyk.hasap@gmail.com' style={{ textDecoration: 'none' }} className='footerTitle'>{t('address')}</a>
                             </Stack>
                         </Stack>
                     </Grid>

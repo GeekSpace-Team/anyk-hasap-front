@@ -24,6 +24,12 @@ i18n
             "underContactUs":"If you have any questions or need any assistance  ",
             "customerReviews": "Customer Reviews",
             "sendMessage":"Successfully sended",
+            "address":"203 apartment, Oguzhan street, Ashgabat city",
+            "aboutUsText1":'Since 2018, Anyk Hasap auditing company has been providing a wide range of services in the field of audit, accounting, taxation and management consulting.',
+            "aboutUsText2":'Anyk Hasap auditors have more than 20 years of excellent work experience in the field of audit, accounting and tax consulting in organizations of various fields of activity, auditors in the staff are all reliable professionals.',
+            "aboutUsText3":'When choosing an audit company, along with the cost of services, business reputation and experience play an important role. Therefore, we undertake only the work that we can do really well, with full responsibility and quality assurance!',
+            "aboutUsText4":'The license to carry out audit activities was issued by the Ministry of Economy and Finance of Turkmenistan No. 1-17-29-50 dated December 28, 2021.',
+            "aboutUsText5":'"Anyk Hasap" strives to bring real benefits to your business, protect you from mistakes, reduce tax and financial risks - provide high quality services.',
             "ourServicText":"The pain itself is love, the main storage system. The lake wants the arrows, until the main street is aligned with the venomous quiver. From the football, if not, the price is important.",
           }
       },
@@ -43,6 +49,12 @@ i18n
             "underContactUs":"Soraglaryňyz bar bolsa ýa-da kömek gerek bolsa",
             "customerReviews":"müşderi synlary",
             "sendMessage":"üstünlikli iberildi",
+            "aboutUsText1":'2018-nji ýyldan başlap, “Anyk Hasap” barlag kompaniýasy audit, buhgalteriýa, salgyt salmak we dolandyryş maslahat beriş ulgamynda giň hyzmatlary hödürleýär.',
+            "aboutUsText2":'Anyk Hasap auditorlary, dürli iş guramalarynda audit, buhgalteriýa we salgyt maslahat beriş ulgamynda 20 ýyldan gowrak iş tejribesine eýe, işgärlerdäki auditorlar ygtybarly hünärmenlerdir.',
+            "aboutUsText3":'Gözegçilik kompaniýasyny saýlanyňyzda, hyzmatlaryň bahasy bilen birlikde, işewürlik abraýy we tejribe möhüm rol oýnaýar. Şonuň üçin diňe doly jogapkärçilik we hil kepilligi bilen hakykatdanam gowy edip biljek işimizi edýäris!',
+            "aboutUsText4":'Gözegçilik işlerini amala aşyrmak üçin ygtyýarnama 2021-nji ýylyň 28-nji dekabrynda Türkmenistanyň Ykdysadyýet we Maliýe ministrligi tarapyndan 1-17-29-50 belgili berildi.',
+            "aboutUsText5":'"Anyk Hasap" işiňize hakyky peýdalary getirmäge, ýalňyşlyklardan goramaga, salgyt we maliýe töwekgelçiliklerini azaltmaga çalyşýar - ýokary hilli hyzmatlary bermäge.',
+            "address":"Aşgabat şäheri, Oguzhan köçesi, 203-nji jaýy",
             "ourServicText":"Agyrynyň özi esasy saklaýyş ulgamy bolan söýgi. Köl esasy köçäni zäherli titreýänçä, oklary isleýär. Futboldan, bolmasa, bahasy möhümdir.",
 
         }
@@ -51,6 +63,7 @@ i18n
         translation: {
             "homePage":"Главная",
             "OurServices":"Наши услуги",
+            "address":"город Ашхабад, ул.Огузхана, дом 203",
             "Aboutus":"О нас",
             "Contacts":"Контакты",
             "wheretrustmeetsstrategy": "где доверие встречается со стратегией",
@@ -63,6 +76,11 @@ i18n
             "underContactUs":"Если у вас есть какие-либо вопросы или вам нужна помощь",
             "customerReviews":"Отзывы клиентов",
             "sendMessage":"успешно отправлено",
+            "aboutUsText1":'Аудиторская компания «Anyk Hasap» с 2018 года предоставляет широкий спектр услуг в области аудита, бухгалтерского учета, налогообложения и управленческого консультирования.',
+            "aboutUsText2":'Аудиторы «Anyk Hasap», имеют более 20-и лет стажа безупречной работы в сфере аудита, бухгалтерского учета и налогового консультирования в организациях различных сфер деятельности, аудиторы в штате — все надёжные профессионалы.',
+            "aboutUsText3":'При выборе аудиторской компании, наряду со стоимостью услуг, важную роль играют деловая репутация и опыт. Поэтому, мы беремся только за ту работу, которую можем выполнить действительно хорошо, с полной ответственностью и гарантией качества!',
+            "aboutUsText4":'Лицензия на осуществление аудиторской деятельности выдан Министерством экономики и финансов Туркменистана №1-17-29-50 от 28.12.2021 года.',
+            "aboutUsText5":'«Anyk Hasap» стремится принести реальную пользу вашему бизнесу, уберечь от ошибок, снизить налоговые и финансовые риски – предоставить услуги высокого качества.',
             "ourServicText":"Сама боль и есть любовь, главная система хранения. Озеру нужны стрелы, пока главная улица не выровняется с ядовитым колчаном. От футбола, если нет, то цена важна.",
             
         }
