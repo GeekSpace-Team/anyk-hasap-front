@@ -75,7 +75,7 @@ const Navbar = () => {
       setLang(l);
       i18n.changeLanguage(l);
     } else {
-      i18n.changeLanguage("en");
+      i18n.changeLanguage("ru");
     }
   },[]);
 
@@ -152,7 +152,7 @@ const Navbar = () => {
           <img src='./img/mail.svg' style={{height:'18px'}}/>
           <a href='mailto:anyk.hasap@gmail.com' className='smallLink'>anyk.hasap@gmail.com</a>
           <img src='./img/phone.svg' style={{height:'18px'}}/>
-          <a href='tel:+993 (12) 95-50-19' className='smallLink'>+993 (12) 95-50-19</a>
+          <a href='tel:+99365 65 65 65' className='smallLink'>+99365 65 65 65 </a>
         </Stack>
       </InfoContainer>
       </Container>
@@ -162,7 +162,7 @@ const Navbar = () => {
 
             <Grid item xs={3}>
               <NavLink to="/">
-                <img src='./img/AnykLogo.svg' style={{ height: '50px',width:'auto' }} />
+                <img src='./img/AnykLogo.svg' style={{ height: '60px',width:'auto' }} />
               </NavLink>
             </Grid>
             <Grid item xs={7}>

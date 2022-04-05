@@ -31,7 +31,7 @@ const AboutUs = () => {
         <AboutUsss>
           <span>{t('Aboutus')}</span>
         </AboutUsss>
-        <Grid container>
+        {/* <Grid container>
           <Grid item lg={4} md={6} xs={12} sm={6}> 
           <Stack direction='column'  spacing={2} justifyContent='center' marginTop={7} alignItems='center'>
             <div className='circul'>
@@ -56,18 +56,24 @@ const AboutUs = () => {
             <label className='frameTitle'>Lorem ipsium dolor.</label>
           </Stack>
           </Grid>
-        </Grid>
+        </Grid> */}
         <Grid container>
           <Grid item lg={6} md={6} xs={12} sm={12}>
             <Stack direction="column" spacing={0} marginTop={9}>
             <Grid item md={12} lg={12} xs={12} sm={12}>
-              <p className='frameText'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus at sollicitudin in arcu risus ac interdum scelerisque diam. In mi vulputate id nec pretium massa suspendisse eu. Egestas elit facilisis egestas mattis quisque a, lorem lectus venenatis.</p>
+              <p className='frameText'>Аудиторская компания «Anyk Hasap» с 2018 года предоставляет широкий спектр услуг в области аудита, бухгалтерского учета, налогообложения и управленческого консультирования.</p>
             </Grid>
             <Grid item md={12} lg={12} xs={12} sm={12}>
-              <p className='frameText'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus at sollicitudin in arcu risus ac interdum scelerisque diam. In mi vulputate id nec pretium massa suspendisse eu. Egestas elit facilisis egestas mattis quisque a, lorem lectus venenatis.</p>
+              <p className='frameText'>Аудиторы «Anyk Hasap», имеют более 20-и лет стажа безупречной работы в сфере аудита, бухгалтерского учета и налогового консультирования в организациях различных сфер деятельности, аудиторы в штате — все надёжные профессионалы.</p>
             </Grid>
             <Grid item md={12} lg={12} xs={12} sm={12}>
-              <p className='frameText'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus at sollicitudin in arcu risus ac interdum scelerisque diam. In mi vulputate id nec pretium massa suspendisse eu. Egestas elit facilisis egestas mattis quisque a, lorem lectus venenatis.</p>
+              <p className='frameText'>При выборе аудиторской компании, наряду со стоимостью услуг, важную роль играют деловая репутация и опыт. Поэтому, мы беремся только за ту работу, которую можем выполнить действительно хорошо, с полной ответственностью и гарантией качества!</p>
+            </Grid>
+            <Grid item md={12} lg={12} xs={12} sm={12}>
+              <p className='frameText'>Лицензия на осуществление аудиторской деятельности выдан Министерством экономики и финансов Туркменистана №1-17-29-50 от 28.12.2021 года.</p>
+            </Grid>
+            <Grid item md={12} lg={12} xs={12} sm={12}>
+              <p className='frameText'>«Anyk Hasap» стремится принести реальную пользу вашему бизнесу, уберечь от ошибок, снизить налоговые и финансовые риски – предоставить услуги высокого качества.</p>
             </Grid>
             </Stack>
           </Grid>

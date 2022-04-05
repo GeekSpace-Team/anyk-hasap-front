@@ -41,7 +41,7 @@ const AccorDion = () => {
                                 <Grid onClick={() => toggle(index)} key={index} item lg={10} md={10} xs={12} sm={12}>
                                     <Stack direction={'row'}>
                                         <Stack direction={'column'}>
-                                            <h3 className='accordionTitle' style={{ cursor: 'pointer' }}>ОБЯЗАТЕЛЬНЫЙ АУДИТ</h3>
+                                            <h3 className='accordionTitle' style={{ cursor: 'pointer' }}>{item.title}</h3>
                                             <p className='accText' style={{ cursor: 'pointer' }}>Аудиторская компания «Anyk Hasap» с 2018 года предоставляет широкий спектр услуг в области аудита, бухгалтерского учета, налогообложения и управленческого консультирования.</p>
                                         </Stack>
                                         <Stack>
@@ -51,9 +51,9 @@ const AccorDion = () => {
                                     {clicked === index ? (
                                         <ul className='accMore'>
                                             <Stack spacing={3}>
-                                                <li>Аудиторы «Anyk Hasap», имеют более 20-и лет стажа безупречной работы в сфере аудита, бухгалтерского учета и налогового консультирования в организациях различных сфер деятельности, аудиторы в штате — все надёжные профессионалы.</li>
-                                                <li>Аудиторы «Anyk Hasap», имеют более 20-и лет стажа безупречной работы в сфере аудита, бухгалтерского учета и налогового консультирования в организациях различных сфер деятельности, аудиторы в штате — все надёжные профессионалы При выборе аудиторской компании, наряду со стоимостью услуг, важную роль играют деловая репутация и опыт.</li>
-                                                <li>Поэтому, мы беремся только за ту работу, которую можем выполнить действительно хорошо, с полной ответственностью и гарантией качества! Лицензия на осуществление аудиторской деятельности выдан Министерством экономики и финансов Туркменистана №1-17-29-50 от 28.12.2021 года. «Anyk Hasap» стремится принести реальную пользу вашему бизнесу, уберечь от ошибок, снизить налоговые и финансовые риски – предоставить услуги высокого качества.</li>
+                                                <li>Нет текст.</li>
+                                                <li>Нет текст.</li>
+                                                <li>Нет текст.</li>
                                             </Stack>
                                         </ul>
                                     ) : null}
@@ -78,42 +78,42 @@ const AccData = [
     {
         id: '1',
         img: '/img/firstImg.png',
-        title: 'homeInfoTitle',
+        title: 'ОБЯЗАТЕЛЬНЫЙ АУДИТ',
         desc: 'ourServicText',
         more: 'ourServicText'
     },
     {
         id: '2',
         img: '/img/secondImg.png',
-        title: 'homeInfoTitle',
+        title: 'ИНИЦИАТИВНЫЙ АУДИТ',
         desc: 'ourServicText',
         more: 'ourServicText'
     },
     {
         id: '3',
         img: '/img/thirdImg.png',
-        title: 'homeInfoTitle',
+        title: 'НАЛОГОВОЕ КОНСУЛЬТИРОВАНИЕ',
         desc: 'ourServicText',
         more: 'ourServicText'
     },
     {
         id: '4',
         img: '/img/fourthImg.png',
-        title: 'homeInfoTitle',
+        title: 'УПРАВЛЕНЧЕСКОЕ КОНСУЛЬТИРОВАНИЕ',
         desc: 'ourServicText',
         more: 'ourServicText'
     },
     {
         id: '5',
         img: '/img/fifthImg.png',
-        title: 'homeInfoTitle',
+        title: 'ОЦЕНКА НАДЁЖНОСТИ СИСТЕМЫ ВНУТРЕННЕГО КОНТРОЛЯ',
         desc: 'ourServicText',
         more: 'ourServicText'
     },
     {
         id: '6',
         img: '/img/sixthImg.png',
-        title: 'homeInfoTitle',
+        title: 'КАЛЬКУЛЯЦИИ',
         desc: 'ourServicText',
         more: 'ourServicText'
     }

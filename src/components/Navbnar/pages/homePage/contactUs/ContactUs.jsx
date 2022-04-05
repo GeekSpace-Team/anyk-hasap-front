@@ -60,18 +60,18 @@ const ContactUs = () => {
                             </ContactUsss>
                         </div>
                         <div className='aboutServ'>
-                            <p>{t('underContactUs')}</p>
+                            <p style={{textAlign:"left"}}>{t('underContactUs')}</p>
                         </div>
                         <Stack direction={'row'} marginTop={3}>
                             <Grid item lg={6} md={6} xs={12} sm={12}>
                                 <Stack direction='column' spacing={2}>
-                                    <label className='conLeftItems'>Phone :</label>
+                                    <label className='conLeftItems'>Телефон :</label>
                                     <a href='tel:+99365656565' className='smallLink'>+993 65 65 65 65</a>
                                 </Stack>
                             </Grid>
                             <Grid item lg={6} md={6} xs={12} sm={12}>
                                 <Stack direction='column' spacing={2}>
-                                    <label className='conLeftItems'>Mail :</label>
+                                    <label className='conLeftItems'>E-Mail :</label>
                                     <a href='mailto:anyk.hasap@gmail.com' className='smallLink'>anyk.hasap@gmail.com</a>
                                 </Stack>
                             </Grid>
@@ -79,14 +79,14 @@ const ContactUs = () => {
                         <Stack direction={'row'} marginTop={3} marginBottom={3}>
                             <Grid item lg={6} md={6} xs={12} sm={12}>
                                 <Stack direction='column' spacing={2}>
-                                    <label className='conLeftItems'>Work hours:</label>
-                                    <label className='conLeftItems'>Mn - Fr: 9:00 - 18:00</label>
+                                    <label className='conLeftItems'>Режим работы:</label>
+                                    <label className='conLeftItems'>Пн - Пт: 9:00 - 18:00</label>
                                 </Stack>
                             </Grid>
                             <Grid item lg={6} md={6} xs={12} sm={12}>
                                 <Stack direction='column' spacing={2}>
-                                    <label className='conLeftItems'>Adress:</label>
-                                    <label className='conLeftItems'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+                                    <label className='conLeftItems'>Адрес:</label>
+                                    <label className='conLeftItems'>744028, город Ашхабад, ул.Огузхана, дом 203</label>
                                 </Stack>
                             </Grid>
                         </Stack>
@@ -98,7 +98,7 @@ const ContactUs = () => {
                         <form ref={form} onSubmit={sendEmail}>
                             <Grid item lg={12} md={12} xs={12} sm={12}>
                                 <Stack spacing={1.5} className='inputText'>
-                                    <TextField id="standard-basic" name="user_name" value={username} onChange={e => setUsername(e.target.value)} variant="standard" label="Name" InputLabelProps={{ className: 'textFielddd__label' }} required/>
+                                    <TextField id="standard-basic" name="user_name" value={username} onChange={e => setUsername(e.target.value)} variant="standard" label="Ваше имя" InputLabelProps={{ className: 'textFielddd__label' }} required/>
                                 </Stack>
                             </Grid>
                             <Grid item lg={12} md={12} xs={12} sm={12}>
@@ -108,13 +108,13 @@ const ContactUs = () => {
                             </Grid>
                             <Grid item lg={12} md={12} xs={12} sm={12}>
                                 <Stack spacing={1.5} marginTop={3}>
-                                    <TextField id="standard-multiline-static" name="message" value={message} onChange={e => setMessage(e.target.value)} InputLabelProps={{ className: 'textFielddd__label' }} multiline rows={4} label='Text' variant="standard" required/>
+                                    <TextField id="standard-multiline-static" name="message" value={message} onChange={e => setMessage(e.target.value)} InputLabelProps={{ className: 'textFielddd__label' }} multiline rows={4} label='Ваше сообщение' variant="standard" required/>
                                 </Stack>
                             </Grid>
                             <Grid item lg={12} md={12} xs={12} sm={12}>
                                 <Stack direction={'row'} mt={15} className='sendMessage'>
                                     <Button onClick={sendEmail} type='submit' variant="outlined" endIcon={<ArrowForwardIosIcon style={{ height: '11px' }} />}>
-                                        Send message
+                                       Отправить
                                     </Button>
                                 </Stack>
                             </Grid>

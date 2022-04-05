@@ -50,7 +50,7 @@ i18n
       ru: {
         translation: {
             "homePage":"Главная",
-            "OurServices":"Наши сервисы",
+            "OurServices":"Наши услуги",
             "Aboutus":"О нас",
             "Contacts":"Контакты",
             "wheretrustmeetsstrategy": "где доверие встречается со стратегией",

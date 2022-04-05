@@ -35,10 +35,10 @@ const FooTter = () => {
         <div className='FooterContainer'>
             <Container maxWidth="lg">
                 <Grid container paddingTop={2.5}  justifyContent={'center'} paddingBottom={5}>
-                    <Grid lg={3} md={6} xs={12} sm={12}  >
+                    <Grid lg={4} md={6} xs={12} sm={12}  >
                         <img src="./img/AnykLogo.svg" alt="#" />
                     </Grid>
-                    <Grid lg={3} md={6} xs={12} sm={12}>
+                    <Grid lg={4} md={6} xs={12} sm={12}>
                     <Stack direction={'column'} spacing={2} className='navMedia'>
                                     <NavLink to="/" className='navBarItem'>
                                         {t('homePage')}
@@ -54,7 +54,7 @@ const FooTter = () => {
                                     </NavLink>
                                 </Stack>
                     </Grid>
-                    <Grid lg={3} md={6} xs={12} sm={12}>
+                    {/* <Grid lg={3} md={6} xs={12} sm={12}>
                         <Stack direction={'column'} spacing={2} className='servMedia'>
                             <label className='footerTitle'>Lorem ipsium</label>
                             <label className='footerTitle'>Lorem ipsium</label>
@@ -63,8 +63,8 @@ const FooTter = () => {
                             <label className='footerTitle'>Lorem ipsium</label>
                             <label className='footerTitle'>Lorem ipsium</label>
                         </Stack>
-                    </Grid>
-                    <Grid lg={3} xs={12} md={6} sm={12}>
+                    </Grid> */}
+                    <Grid lg={4} xs={12} md={6} sm={12}>
                         <Stack direction='column' spacing={3} className='contactMedia'>
                             <Stack direction={'row'} spacing={2}>
                                 <img src='./img/mobileFooter.svg' style={{ height: '18px' }} />
