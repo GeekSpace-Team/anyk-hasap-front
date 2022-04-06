@@ -4,11 +4,11 @@ import { useTranslation } from "react-i18next";
 import { Grid, Stack } from '@mui/material';
 import { i18n } from '../../../../Language/LangConfig';
 import ContactUs from './contactUs/ContactUs';
-import Customer from './customer/Customer';
-import DemoCarousel from '../carousel/DemoCarousel';
+// import Customer from './customer/Customer';
+// import DemoCarousel from '../carousel/DemoCarousel';
 import FooTter from '../footer/FooTter';
 import styled from 'styled-components'
-import { NavLink as Link} from 'react-router-dom'
+import { NavLink as Link } from 'react-router-dom'
 import './home.css';
 
 
@@ -30,25 +30,22 @@ const HomePage = () => {
 
   const [clicked, setClicked] = useState(false);
 
-  const toggle = index => {
-    if (clicked === index) {
-      return setClicked(null)
-    }
-    setClicked(index)
-  }
+  
   return (
     <div>
       <div className='homeFirstContianer'>
         <div className='transparent'>
           <Container maxWidth="lg">
             <div className='homePageLabel'>
-              <label className='lableName'>{t('wheretrustmeetsstrategy')}</label>
-              <p>{t('homeUnderTitle')}</p>
+              <label className='lableName'>Аудит – для независимой и объективной оценки деятельности и состояния компании.</label>
+              {/* <label className='lableName'>{t('wheretrustmeetsstrategy')}</label> */}
+              {/* <p>{t('homeUnderTitle')}</p> */}
+              <p style={{marginLeft:"7px"}}>«Anyk Hasap» стремится принести реальную пользу вашему бизнесу, уберечь от ошибок, снизить налоговые и финансовые риски – предоставить услуги высокого качества.</p>
               <div className='learnMoreButton'>
-                
+
                 <NavLink to="/ourServices" className='navBarItem'>
-                <button>{t('learnMore')}<img src="./img/rightArrow.svg" /></button>
-                                    </NavLink>
+                  <button>{t('learnMore')}<img src="./img/rightArrow.svg" /></button>
+                </NavLink>
               </div>
             </div>
           </Container>
@@ -62,106 +59,22 @@ const HomePage = () => {
             </NavMenu>
           </div>
           <div className='aboutServ'>
-            <p>{t('homeUnderTitle')}</p>
+            {/* <p>{t('homeUnderTitle')}</p> */}
+            <p>При выборе аудиторской компании, наряду со стоимостью услуг, важную роль играют деловая репутация и опыт. Поэтому, мы беремся только за ту работу, которую можем выполнить действительно хорошо, с полной ответственностью и гарантией качества!</p>
           </div>
         </div>
       </Container>
-
       <Container maxWidth="lg">
-        <div className='homeInfoContainer'>
-          <Grid container spacing={{ xs: 2, md: 3 }}>
-            <Grid item xs={12} sm={6} md={6} lg={4}>
-              <Grid container className='infoItems'>
-                <Grid item sm={12} lg={4} alignItems={'center'} className="infoImgContainer">
-                  <img src="./img/firstImg.png" alt="" />
-                </Grid>
-                <Grid item sm={12} lg={7} className="infoTitle">
-                  {/* <label>{t('homeInfoTitle')}</label> */}
-                  <label>Обязательный аудит</label>
-                  {/* <p>{t('homeInfoText')}</p> */}
-                  <p>Аудиторская компания «Anyk Hasap» с 2018 года предоставляет широкий спектр услуг в области аудита, бухгалтерского учета, налогообложения и управленческого консультирования.</p>
-                </Grid>
-              </Grid>
-            </Grid>
-
-
-            <Grid item xs={12} sm={6} md={6} lg={4}>
-              <Grid container className='infoItems'>
-                <Grid item sm={12} lg={4} alignItems={'center'} className="infoImgContainer">
-                  <img src="./img/secondImg.png" alt="" />
-                </Grid>
-                <Grid item sm={12} lg={7} className="infoTitle">
-                  {/* <label>{t('homeInfoTitle')}</label> */}
-                  <label>Инициативный аудит</label>
-                  {/* <p>{t('homeInfoText')}</p> */}
-                  <p>Аудиторы «Anyk Hasap», имеют более 20-и лет стажа безупречной работы в сфере аудита, бухгалтерского учета и налогового консультирования в организациях различных сфер деятельности, аудиторы в штате — все надёжные профессионалы.</p>
-                </Grid>
-              </Grid>
-            </Grid>
-
-            <Grid item xs={12} sm={6} md={6} lg={4}>
-              <Grid container className='infoItems'>
-                <Grid item sm={12} lg={4} alignItems={'center'} className="infoImgContainer">
-                  <img src="./img/thirdImg.png" alt="" />
-                </Grid>
-                <Grid item sm={12} lg={7} className="infoTitle">
-                  {/* <label>{t('homeInfoTitle')}</label> */}
-                  <label>Налоговое консультирование</label>
-                  {/* <p>{t('homeInfoText')}</p> */}
-                  <p>При выборе аудиторской компании, наряду со стоимостью услуг, важную роль играют деловая репутация и опыт. Поэтому, мы беремся только за ту работу, которую можем выполнить действительно хорошо, с полной ответственностью и гарантией качества!</p>
-                </Grid>
-              </Grid>
-            </Grid>
-
-
-            <Grid item xs={12} sm={6} md={6} lg={4}>
-              <Grid container className='infoItems'>
-                <Grid item sm={12} lg={4} alignItems={'center'} className="infoImgContainer">
-                  <img src="./img/fourthImg.png" alt="" />
-                </Grid>
-                <Grid item sm={12} lg={7} className="infoTitle">
-                  {/* <label>{t('homeInfoTitle')}</label> */}
-                  <label>Управленческое консультирование</label>
-                  {/* <p>{t('homeInfoText')}</p> */}
-                  <p>Лицензия на осуществление аудиторской деятельности выдан Министерством экономики и финансов Туркменистана №1-17-29-50 от 28.12.2021 года.</p>
-                </Grid>
-              </Grid>
-            </Grid>
-
-
-            <Grid item xs={12} sm={6} md={6} lg={4}>
-              <Grid container className='infoItems'>
-                <Grid item sm={12} lg={4} alignItems={'center'} className="infoImgContainer">
-                  <img src="./img/fifthImg.png" alt="" />
-                </Grid>
-                <Grid item sm={12} lg={7} className="infoTitle">
-                  {/* <label>{t('homeInfoTitle')}</label> */}
-                  <label>Оценка надёжности системы внутреннего контроля</label>
-                  {/* <p>{t('homeInfoText')}</p> */}
-                  <p>«Anyk Hasap» стремится принести реальную пользу вашему бизнесу, уберечь от ошибок, снизить налоговые и финансовые риски – предоставить услуги высокого качества.
-                  </p>
-                </Grid>
-              </Grid>
-            </Grid>
-
-
-            <Grid item xs={12} sm={6} md={6} lg={4}>
-              <Grid container className='infoItems'>
-                <Grid item sm={12} lg={4} alignItems={'center'} className="infoImgContainer">
-                  <img src="./img/sixthImg.png" alt="" />
-                </Grid>
-                <Grid item sm={12} lg={7} className="infoTitle">
-                  {/* <label>{t('homeInfoTitle')}</label> */}
-                  <label>Калькуляции</label>
-                  {/* <p>{t('homeInfoText')}</p> */}
-                  <p>Аудиторская компания «Anyk Hasap» с 2018 года предоставляет широкий спектр услуг в области аудита, бухгалтерского учета, налогообложения и управленческого консультирования.</p>
-                </Grid>
-              </Grid>
-            </Grid>
-
-          </Grid>
-        </div>
+        <Stack className='newOurServices' marginLeft={'12%'} spacing={3} mt={7} mb={7}>
+          <label>- Обязательный аудит</label>
+          <label>- Инициативный аудит</label>
+          <label>- Налоговое консультирование</label>
+          <label>- Управленческое консультирование</label>
+          <label>- Оценка надёжности системы внутреннего контроля</label>
+          <label>- Калькуляции</label>
+        </Stack>
       </Container>
+      
       <div className='aboutUsPhoto'>
         <div className="mediaTransparent">
           <Container maxWidth="lg">
@@ -169,34 +82,29 @@ const HomePage = () => {
               <AboutUs>
                 <span style={{ color: 'white' }}>{t('Aboutus')}</span>
               </AboutUs>
-
+              <div className='homeAboutUsContainer'>
+                    <p style={{ textAlign: "left", fontSize: "17px" }}>{t('aboutUsText1')}</p>
+                    
               {ServicText.map((item, index) => {
                 return (
-                  <><div className='homeAboutUsContainer'>
-                    <p style={{textAlign:"left", fontSize:"15px"}}>Аудиторская компания «Anyk Hasap» с 2018 года предоставляет широкий спектр услуг в области аудита, бухгалтерского учета, налогообложения и управленческого консультирования.</p>
-                    <p style={{textAlign:"left", fontSize:"15px"}}>Аудиторы «Anyk Hasap», имеют более 20-и лет стажа безупречной работы в сфере аудита, бухгалтерского учета и налогового консультирования в организациях различных сфер деятельности, аудиторы в штате — все надёжные профессионалы.</p>
-                    <p style={{textAlign:"left", fontSize:"15px"}}>При выборе аудиторской компании, наряду со стоимостью услуг, важную роль играют деловая репутация и опыт. Поэтому, мы беремся только за ту работу, которую можем выполнить действительно хорошо, с полной ответственностью и гарантией качества!</p>
-                    <p style={{textAlign:"left", fontSize:"15px"}}>Лицензия на осуществление аудиторской деятельности выдан Министерством экономики и финансов Туркменистана №1-17-29-50 от 28.12.2021 года.</p>
-                    <p style={{textAlign:"left", fontSize:"15px"}}> «Anyk Hasap» стремится принести реальную пользу вашему бизнесу, уберечь от ошибок, снизить налоговые и финансовые риски – предоставить услуги высокого качества.</p>
-                      <>
-                    {/* {clicked === index ? (
-                        <p style={{textAlign:"left", fontSize:"17px"}}>{item.text1}</p>
-                      ) : null} */}
-                      </>
-                  </div>
-                    <div id='secondLearnButton' className='learnMoreButton'>
-                      <button onClick={() => toggle(index)} key={index} style={{ paddingTop: '1%', paddingBottom: '1%', paddingRight: '4%', paddingLeft: '4%' }}>{t('learnMore')}<img src="./img/rightArrow.svg" /></button>
-                    </div>
+                  <>
+                      {clicked==true ? (
+                           <p style={{ textAlign: "left", lineHeight:"20px", marginTop:'30px', fontSize: "17px" }}>{t(item.text)}</p>
+                      ) : null}
                   </>
                 )
               })}
+              <div id='secondLearnButton' className='learnMoreButton'>
+                  <button onClick={() => setClicked(!clicked)} key={'keeey'} style={{ paddingTop: '1.5%', paddingBottom: '1.5%', paddingRight: '5%', paddingLeft: '5%', border:'none' }}>{t('learnMore')}<img src="./img/rightArrow.svg" /></button>
+              </div>
+              </div>
             </Stack>
           </Container>
         </div>
       </div>
       <ContactUs />
-      <Customer />
-      <DemoCarousel />
+      {/* <Customer /> */}
+      {/* <DemoCarousel /> */}
       <FooTter />
     </div>
   )
@@ -262,7 +170,16 @@ const ServicText = [
 
   {
     id: '1',
-    text1: 'Аудиторы «Anyk Hasap», имеют более 20-и лет стажа безупречной работы в сфере аудита, бухгалтерского учета и налогового консультирования в организациях различных сфер деятельности, аудиторы в штате — все надёжные профессионалы При выборе аудиторской компании, наряду со стоимостью услуг, важную роль играют деловая репутация и опыт.Поэтому, мы беремся только за ту работу, которую можем выполнить действительно хорошо, с полной ответственностью и гарантией качества! Лицензия на осуществление аудиторской деятельности выдан Министерством экономики и финансов Туркменистана №1-17-29-50 от 28.12.2021 года. «Anyk Hasap» стремится принести реальную пользу вашему бизнесу, уберечь от ошибок, снизить налоговые и финансовые риски – предоставить услуги высокого качества.'
+    text: 'aboutUsText2'
+  },
+  {
+    id: "2",
+    text: "aboutUsText3"
+  },
+ 
+  {
+    id: "4",
+    text: "aboutUsText5"
   }
 
 ]

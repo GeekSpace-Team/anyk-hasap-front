@@ -3,7 +3,7 @@
     min-height: 70vh;
 }
 .conLeftItems{
-    color: #2A2456;
+    color: #000;
     font-size: 16px;
     font-family: 'regularFont';
 }
@@ -27,12 +27,12 @@
 }
 input{
     border: none;
-    border-bottom: 1px solid #000026;
+    border-bottom: 1px solid #000;
     width: 100%;
 }
 textarea{
     border: none;
-    border-bottom: 1px solid #000026;
+    border-bottom: 1px solid #000;
 }
 .sendButton {
     margin-top: 90px;
@@ -44,33 +44,33 @@ textarea{
 .sendButton button{
     width: 170px;
     background-color: white;
-    border: 1px solid #000026;
+    border: 1px solid #000;
     height: 35px;
     font-family: 'regularFont';
-    color: #000026;
+    color: #000;
 }
 
 .sendMessage button{
     text-transform: capitalize;
-    color: #000026;
+    color: #000;
     font-family: 'regularFont';
-    border: 1px solid #000026;
+    border: 1px solid #000;
 }
 .sendMessage button:hover{
     border: 1px solid black;
 }
 
  .textFielddd__label {
-     color: #000026 !important;
+     color: #000 !important;
      font-family: 'regularFont';
  }
 
 
 .inputText input:focus{
-    color: #000026;
+    color: #000;
     font-family: 'regularFont';
-    /* border-bottom: 1px solid #000026; */
-    border-bottom-color: #000026;
+    /* border-bottom: 1px solid #000; */
+    border-bottom-color: #000;
 }
 
 @media (max-width: 768px) {

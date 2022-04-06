@@ -27,7 +27,7 @@
 
 .mobileLink:hover{
     background-color: white;
-    color: #000026;
+    color: #000;
 }
 
 .smallLink:nth-child(2){
@@ -35,7 +35,7 @@
 }
 
 .smallLink{
-    color: #000026;
+    color: #000;
     text-decoration: none; 
     font-family:'regularFont';
     font-size: 14px;
@@ -53,7 +53,7 @@
   padding: 5px;
   font-family:'boldFont';
   background-color: white;
-  color: #000026;
+  color: #000;
   border: none;
 }
 
@@ -64,7 +64,7 @@
 }
 
 .langSelect option{
-    color: #000026;
+    color: #000;
 }
 
 

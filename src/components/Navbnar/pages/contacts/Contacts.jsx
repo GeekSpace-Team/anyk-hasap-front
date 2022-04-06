@@ -1,8 +1,8 @@
 import React from 'react'
-import DemoCarousel from '../carousel/DemoCarousel'
+// import DemoCarousel from '../carousel/DemoCarousel'
 import FooTter from '../footer/FooTter'
 import ContactUs from '../homePage/contactUs/ContactUs'
-import Customer from '../homePage/customer/Customer'
+// import Customer from '../homePage/customer/Customer'
 
 const Contacts = () => {
   return (
@@ -11,8 +11,8 @@ const Contacts = () => {
         <img src='./img/contakt.png' />
       </div>
       <ContactUs />
-<Customer />
-<DemoCarousel />
+{/* <Customer /> */}
+{/* <DemoCarousel /> */}
       <FooTter />
     </div>
   )

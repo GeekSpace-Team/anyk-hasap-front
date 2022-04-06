@@ -1,26 +1,35 @@
 .homeFirstContianer{
-    background-image: url(../../../../../public/img/homepage1.png);
-    background-size: cover;
+    background-image: url(../../../../../public/img/BaseImg.png);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+    height: 500px;
+    border: none;
+    margin: -2px;
 }
 
-.transparent{
+/* .transparent{
     background: linear-gradient(89.98deg, rgba(42, 35, 86, 0.3) -3.37%, rgba(42, 35, 86, 0) 103.15%);
     backdrop-filter: blur(3px);
     height: auto;
     padding-top: 80px;
     padding-bottom: 120px;
+} */
+.newOurServices label {
+    font-family: 'regularFont';
+    letter-spacing: 1.5px;
+    font-size: 1.5vw;
 }
 
 
 .homePageLabel{
     width: 50%;
+    padding-top: 30px;
 }
 
 .lableName{
     text-transform: uppercase;
     color: #FFFFFF;
-    font-size: 3vw;
+    font-size: 2.3vw;
     font-family: 'semiBold';
    
 }
@@ -45,15 +54,16 @@
     padding-left: 5%;
     padding-right: 5%;
     font-size: 1vw;
-    background: linear-gradient(89.98deg, rgba(42, 35, 86, 0.3) -3.37%, rgba(42, 35, 86, 0) 103.15%);
-    border: 1px solid #FFFFFF;
+    /* background: linear-gradient(89.98deg, rgba(42, 35, 86, 0.3) -3.37%, rgba(42, 35, 86, 0) 103.15%); */
+    background-color: black;
     box-sizing: border-box;
+    border:none;
     display: flex;
     align-items: center;
     font-family: 'regularFont';
 }
 .learnMoreButton button:hover{
-    background-color: #00002656;
+    background-color: #000;
 }
 
 .learnMoreButton img {
@@ -91,7 +101,7 @@
     margin-right: 10%;
 }
 .aboutServ p {
-    color: #2A2456;
+    color: #000;
     font-size: 16px;
     font-family: 'regularFont';
 }
@@ -100,14 +110,14 @@
 }
 .infoTitle label {
     text-transform: uppercase;
-    color: #2A2456;
+    color: #000;
     font-size: 14px;
     font-weight: 600;
     font-family: 'regularFont';
 }
 .infoTitle p {
     padding-top: 7px;
-    color: #2A2456;
+    color: #000;
     font-weight: 400;
     font-size: 15px;
     font-family: 'lightFont';
@@ -119,6 +129,7 @@
      background-repeat: no-repeat;
      height: auto;
      margin-top: 35px;
+     min-height: 400px;
      margin-bottom: 40px;
 }
 #secondLearnButton{

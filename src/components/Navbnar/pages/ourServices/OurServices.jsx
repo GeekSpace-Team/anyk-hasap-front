@@ -12,7 +12,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import FooTter from '../footer/FooTter';
 import styled from 'styled-components'
 import ContactUs from '../homePage/contactUs/ContactUs';
-import AccorDion from './occardion/AccorDion';
+// import AccorDion from './occardion/AccorDion';
 
 
 const OurServices = () => {
@@ -50,10 +50,22 @@ const OurServices = () => {
             <span>{t('OurServices')}</span>
           </TitleName>
           <div className='aboutServ'>
-            <p>{t('ourServicText')}</p>
+            {/* <p>{t('ourServicText')}</p> */}
+            <p>При выборе аудиторской компании, наряду со стоимостью услуг, важную роль играют деловая репутация и опыт. Поэтому, мы беремся только за ту работу, которую можем выполнить действительно хорошо, с полной ответственностью и гарантией качества!</p>
           </div>
         </div>
-        <AccorDion />
+        <Stack className='newOurServices' marginLeft={'12%'} spacing={3} mt={5} mb={7}>
+          <label>- Обязательный аудит</label>
+          <label>- Инициативный аудит</label>
+          <label>- Налоговое консультирование</label>
+          <label>- Управленческое консультирование</label>
+          <label>- Оценка надёжности системы внутреннего контроля</label>
+          <label>- Калькуляции</label>
+        </Stack>
+
+
+
+        {/* <AccorDion /> */}
         <ContactUs />
       </Container>
       <FooTter />

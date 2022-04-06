@@ -2,10 +2,10 @@ import { Grid, Stack } from '@mui/material';
 import React, { useEffect } from 'react'
 import { useTranslation } from "react-i18next";
 import Navbar from '../../Navbar';
-import DemoCarousel from '../carousel/DemoCarousel';
+// import DemoCarousel from '../carousel/DemoCarousel';
 import Container from '@mui/material/Container';
 import { i18n } from '../../../../Language/LangConfig';
-import Customer from '../homePage/customer/Customer';
+// import Customer from '../homePage/customer/Customer';
 import FooTter from '../footer/FooTter';
 import styled from 'styled-components'
 import ContactUs from '../homePage/contactUs/ContactUs';
@@ -89,8 +89,8 @@ const AboutUs = () => {
       </Container>
 
       <ContactUs />
-      <Customer />
-      <DemoCarousel />
+      {/* <Customer /> */}
+      {/* <DemoCarousel /> */}
       <FooTter />
     </div>
   )

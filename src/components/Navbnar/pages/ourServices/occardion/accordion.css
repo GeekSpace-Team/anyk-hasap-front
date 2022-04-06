@@ -26,13 +26,13 @@
 
 .accordionTitle{
     text-transform: uppercase;
-    color: #2A2456;
+    color: #000;
     font-family: 'regularFont';
     letter-spacing: 0.5px;
     margin-left: -2%;
 }
 .accText {
-    color: #2A2456;
+    color: #000;
     font-family: 'regularFont';
     margin-left: -3%;
     line-height: 40px;
@@ -43,6 +43,6 @@
     padding: 20px;
 }
 .accMore li {
-    color: #2A2456;
+    color: #000;
     font-family: 'regularFont';
 }

@@ -68,11 +68,11 @@ const FooTter = () => {
                         <Stack direction='column' spacing={3} className='contactMedia'>
                             <Stack direction={'row'} spacing={2}>
                                 <img src='./img/mobileFooter.svg' style={{ height: '18px' }} />
-                                <a href='tel:+99365656565' style={{ textDecoration: 'none' }} className='footerTitle'>+993 65 65 65 65</a>
+                                <a href='tel:+99365533534' style={{ textDecoration: 'none' }} className='footerTitle'>+993 65 53 35 34</a>
                             </Stack>
                             <Stack direction={'row'} spacing={2}>
                                 <img src='./img/phoneFooter.svg' style={{ height: '18px' }} />
-                                <a href='tel:+993 (12) 95-50-19' style={{ textDecoration: 'none' }} className='footerTitle'>+993 (12) 95-50-19</a>
+                                <a href='tel:+993 (12) 95-50-19' style={{ textDecoration: 'none' }} className='footerTitle'>+993 12 95-50-19</a>
                             </Stack>
                             <Stack direction={'row'} spacing={2}>
                                 <img src='./img/mailFooter.svg' style={{ height: '18px' }} />
@@ -87,7 +87,7 @@ const FooTter = () => {
                 </Grid>
             </Container>
             <Stack alignItems={'center'} paddingBottom={2}>
-                <label className='footerTitle'>@2022</label>
+                <label className='footerTitle'>Все права зашишены.ХО "Анык Хасап" </label>
             </Stack>
         </div>
     )

@@ -110,7 +110,7 @@ const Navbar = () => {
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
-      style={{ background: '#000026' }}
+      style={{ background: 'black' }}
     >
 
       <Stack direction={'column'}>
@@ -149,10 +149,10 @@ const Navbar = () => {
      <Container maxWidth="lg">
       <InfoContainer>
         <Stack alignItems={'flex-end'} spacing={1} justifyContent={'flex-end'} direction={'row'}>
-          <img src='./img/mail.svg' style={{height:'18px'}}/>
+          <img src='./img/mail.svg' style={{height:'18px', color:'#000'}}/>
           <a href='mailto:anyk.hasap@gmail.com' className='smallLink'>anyk.hasap@gmail.com</a>
           <img src='./img/phone.svg' style={{height:'18px'}}/>
-          <a href='tel:+99365 65 65 65' className='smallLink'>+99365 65 65 65 </a>
+          <a href='tel:+99365 65 53 35 34' className='smallLink'>+99365 53 35 34 </a>
         </Stack>
       </InfoContainer>
       </Container>
