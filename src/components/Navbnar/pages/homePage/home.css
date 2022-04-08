@@ -1,19 +1,20 @@
 .homeFirstContianer{
     background-image: url(../../../../../public/img/BaseImg.png);
-    background-size: 100% 100%;
+    background-size: 100% 130%;
     background-repeat: no-repeat;
-    height: 500px;
+    background-position: center;
+    height: auto ;
     border: none;
-    margin: -2px;
+    outline: none;
+    background-color: black;
 }
 
-/* .transparent{
+.transparent{
     background: linear-gradient(89.98deg, rgba(42, 35, 86, 0.3) -3.37%, rgba(42, 35, 86, 0) 103.15%);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(1px);
     height: auto;
-    padding-top: 80px;
-    padding-bottom: 120px;
-} */
+    padding-bottom: 100px;
+}
 .newOurServices label {
     font-family: 'regularFont';
     letter-spacing: 1.5px;
@@ -157,7 +158,6 @@
 .homeAboutUsContainer p {
     color: white;
     font-size: 1vw;
-    margin-left: -13px;
     font-family: 'regularFont';
     text-align: justify;
 }
@@ -175,6 +175,9 @@
 @media screen and (max-width: 768px){
     .homePageLabel{
         width:100%;
+    }
+    .newOurServices label {
+        font-size: 17px;
     }
     .lableName{
         font-size: 30px;
@@ -225,5 +228,6 @@
     .mediaTransparent{
         background-color: rgba(0, 0, 0, 0.548);
         height: auto;
+        min-height: 400px;
     }
 }
