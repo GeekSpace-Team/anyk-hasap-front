@@ -35,10 +35,10 @@ const FooTter = () => {
         <div className='FooterContainer'>
             <Container maxWidth="lg">
                 <Grid container paddingTop={2.5}  justifyContent={'center'} paddingBottom={5}>
-                    <Grid lg={4} md={6} xs={12} sm={12}  >
+                    <Grid item={true} lg={4} md={6} xs={12} sm={12}  >
                         <img src="./img/AnykLogo.svg" alt="#" />
                     </Grid>
-                    <Grid lg={4} md={6} xs={12} sm={12}>
+                    <Grid item={true} lg={4} md={6} xs={12} sm={12}>
                     <Stack direction={'column'} spacing={2} className='navMedia'>
                                     <NavLink to="/" className='navBarItem'>
                                         {t('homePage')}
@@ -64,30 +64,30 @@ const FooTter = () => {
                             <label className='footerTitle'>Lorem ipsium</label>
                         </Stack>
                     </Grid> */}
-                    <Grid lg={4} xs={12} md={6} sm={12}>
+                    <Grid  item={true} lg={4} xs={12} md={6} sm={12}>
                         <Stack direction='column' spacing={3} className='contactMedia'>
                             <Stack direction={'row'} spacing={2}>
-                                <img src='./img/mobileFooter.svg' style={{ height: '18px' }} />
+                                <img src='./img/mobileFooter.svg' alt='#' style={{ height: '18px' }} />
                                 <a href='tel:+99365533534' style={{ textDecoration: 'none' }} className='footerTitle'>+993 65 53 35 34</a>
                             </Stack>
                             <Stack direction={'row'} spacing={2}>
-                                <img src='./img/phoneFooter.svg' style={{ height: '18px' }} />
+                                <img src='./img/phoneFooter.svg' alt='#' style={{ height: '18px' }} />
                                 <a href='tel:+993 (12) 95-50-19' style={{ textDecoration: 'none' }} className='footerTitle'>+993 12 95-50-19</a>
                             </Stack>
                             <Stack direction={'row'} spacing={2}>
-                                <img src='./img/mailFooter.svg' style={{ height: '18px' }} />
+                                <img src='./img/mailFooter.svg' alt='#' style={{ height: '18px' }} />
                                 <a href='mailto:anyk.hasap@gmail.com' style={{ textDecoration: 'none' }} className='footerTitle'>anyk.hasap@gmail.com</a>
                             </Stack>
                             <Stack direction={'row'} spacing={2}>
-                                <img src='./img/locationFooter.svg' style={{ height: '18px' }} />
-                                <a href='mailto:anyk.hasap@gmail.com' style={{ textDecoration: 'none' }} className='footerTitle'>{t('address')}</a>
+                                <img src='./img/locationFooter.svg' alt='#' style={{ height: '18px' }} />
+                                <a href='https://yandex.ru/maps/10324/ashgabat/?from=mapframe&ll=58.356185%2C37.913237&mode=poi&poi%5Bpoint%5D=58.356074%2C37.913273&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D75928748749&source=mapframe&utm_source=mapframe&z=19.8' style={{ textDecoration: 'none' }}  target="_blank" rel="noreferrer" className='footerTitle'>{t('address')}</a>
                             </Stack>
                         </Stack>
                     </Grid>
                 </Grid>
             </Container>
             <Stack alignItems={'center'} paddingBottom={2}>
-                <label className='footerTitle'>Все права зашишены.ХО "Анык Хасап" </label>
+                <label className='footerTitle'>{t('ahliHukuk')}</label>
             </Stack>
         </div>
     )

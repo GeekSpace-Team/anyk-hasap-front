@@ -32,7 +32,7 @@ const AboutUs = () => {
           <span>{t('Aboutus')}</span>
         </AboutUsss>
         {/* <Grid container>
-          <Grid item lg={4} md={6} xs={12} sm={6}> 
+          <Grid item={true} lg={4} md={6} xs={12} sm={6}> 
           <Stack direction='column'  spacing={2} justifyContent='center' marginTop={7} alignItems='center'>
             <div className='circul'>
               <span>+77</span> 
@@ -40,7 +40,7 @@ const AboutUs = () => {
             <label className='frameTitle'>Lorem ipsium dolor.</label>
           </Stack> 
           </Grid>
-          <Grid item lg={4} md={6} xs={12} sm={6}>
+          <Grid item={true} lg={4} md={6} xs={12} sm={6}>
           <Stack direction='column' spacing={2} justifyContent='center' marginTop={7} alignItems='center'>
           <div className='circul'>
               <span>+99</span> 
@@ -48,7 +48,7 @@ const AboutUs = () => {
           <label className='frameTitle'>Lorem ipsium dolor.</label>
           </Stack>
           </Grid>
-          <Grid item lg={4} md={6} xs={12} sm={6}>
+          <Grid item={true} lg={4} md={6} xs={12} sm={6}>
           <Stack direction='column' spacing={2} justifyContent='center' marginTop={7} alignItems='center'>
           <div className='circul'>
               <span>+707</span> 
@@ -58,29 +58,29 @@ const AboutUs = () => {
           </Grid>
         </Grid> */}
         <Grid container>
-          <Grid item lg={6} md={6} xs={12} sm={12}>
+          <Grid item={true} lg={6} md={6} xs={12} sm={12}>
             <Stack direction="column" spacing={0} marginTop={9}>
-            <Grid item md={12} lg={12} xs={12} sm={12}>
+            <Grid item={true} md={12} lg={12} xs={12} sm={12}>
               <p className='frameText'>{t('aboutUsText1')}</p>
             </Grid>
-            <Grid item md={12} lg={12} xs={12} sm={12}>
+            <Grid item={true} md={12} lg={12} xs={12} sm={12}>
               <p className='frameText'>{t('aboutUsText2')}</p>
             </Grid>
-            <Grid item md={12} lg={12} xs={12} sm={12}>
+            <Grid item={true} md={12} lg={12} xs={12} sm={12}>
               <p className='frameText'>{t('aboutUsText3')}</p>
             </Grid>
-            <Grid item md={12} lg={12} xs={12} sm={12}>
+            <Grid item={true} md={12} lg={12} xs={12} sm={12}>
               <p className='frameText'>{t('aboutUsText5')}</p>
             </Grid>
-            <Grid item md={12} lg={12} xs={12} sm={12}>
+            <Grid item={true} md={12} lg={12} xs={12} sm={12}>
               <p className='frameText'>{t('aboutUsText5')}</p>
             </Grid>
             </Stack>
           </Grid>
 
 
-          <Grid item lg={6} md={6} xs={12} sm={12}>
-            <Grid item lg={12} md={12} xs={12} sm={12} marginTop={9} > 
+          <Grid item={true} lg={6} md={6} xs={12} sm={12}>
+            <Grid item={true} lg={12} md={12} xs={12} sm={12} marginTop={9} > 
               <img style={{width:'100%'}} src="./img/aboutUsImg.png" alt="" />
             </Grid>
           </Grid>

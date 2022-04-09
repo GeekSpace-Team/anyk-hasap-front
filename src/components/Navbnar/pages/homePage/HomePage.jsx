@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Container from '@mui/material/Container';
 import { useTranslation } from "react-i18next";
-import { Grid, Stack } from '@mui/material';
+import { Stack } from '@mui/material';
 import { i18n } from '../../../../Language/LangConfig';
 import ContactUs from './contactUs/ContactUs';
 // import Customer from './customer/Customer';
@@ -18,9 +18,13 @@ text-decoration: none;
 `
 
 const HomePage = () => {
+
+
+
   const { t } = useTranslation();
   useEffect(() => {
     let l = localStorage.getItem('lang');
+    // nodeRef = {nodeRef}
     if (l != null && typeof l !== 'undefined') {
       i18n.changeLanguage(l);
     } else {
@@ -29,7 +33,7 @@ const HomePage = () => {
   }, []);
 
   const [clicked, setClicked] = useState(false);
-
+  
   
   return (
     <div>
@@ -38,13 +42,11 @@ const HomePage = () => {
           <Container maxWidth="lg">
             <div className='homePageLabel'>
               <label className='lableName'>Аудит – для независимой и объективной оценки деятельности и состояния компании.</label>
-              {/* <label className='lableName'>{t('wheretrustmeetsstrategy')}</label> */}
-              {/* <p>{t('homeUnderTitle')}</p> */}
               <p style={{marginLeft:"7px"}}>«Anyk Hasap» стремится принести реальную пользу вашему бизнесу, уберечь от ошибок, снизить налоговые и финансовые риски – предоставить услуги высокого качества.</p>
               <div className='learnMoreButton'>
 
                 <NavLink to="/ourServices" className='navBarItem'>
-                  <button>{t('learnMore')}<img src="./img/rightArrow.svg" /></button>
+                  <button>{t('learnMore')}<img src="./img/rightArrow.svg" alt='#' /></button>
                 </NavLink>
               </div>
             </div>
@@ -87,15 +89,15 @@ const HomePage = () => {
                     
               {ServicText.map((item, index) => {
                 return (
-                  <>
-                      {clicked==true ? (
+                  <div key={item.id}>
+                      {clicked===true ? (
                            <p style={{ textAlign: "left", lineHeight:"20px", marginTop:'30px', fontSize: "17px" }}>{t(item.text)}</p>
                       ) : null}
-                  </>
+                  </div>
                 )
               })}
               <div id='secondLearnButton' className='learnMoreButton'>
-                  <button onClick={() => setClicked(!clicked)} key={'keeey'} style={{ paddingTop: '1.5%', paddingBottom: '1.5%', paddingRight: '5%', paddingLeft: '5%', border:'none' }}>{t('learnMore')}<img src="./img/rightArrow.svg" /></button>
+                  <button onClick={() => setClicked(!clicked)} key={'keeey'} style={{ paddingTop: '1.5%', paddingBottom: '1.5%', paddingRight: '5%', paddingLeft: '5%', border:'none' }}>{t('learnMore')}<img src="./img/rightArrow.svg" alt='#' /></button>
               </div>
               </div>
             </Stack>
@@ -106,6 +108,7 @@ const HomePage = () => {
       {/* <Customer /> */}
       {/* <DemoCarousel /> */}
       <FooTter />
+     
     </div>
   )
 }

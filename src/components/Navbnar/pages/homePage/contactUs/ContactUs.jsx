@@ -53,7 +53,7 @@ const ContactUs = () => {
 
 
                 <Grid container>
-                    <Grid item lg={6} md={6} xs={12} sm={12}>
+                    <Grid item={true} lg={6} md={6} xs={12} sm={12}>
                         <div className='ourServ'>
                             <ContactUsss>
                                 <span>{t('contactUs')}</span>
@@ -63,13 +63,13 @@ const ContactUs = () => {
                             <p style={{textAlign:"left"}}>{t('underContactUs')}</p>
                         </div>
                         <Stack direction={'row'} marginTop={3}>
-                            <Grid item lg={6} md={6} xs={12} sm={12}>
+                            <Grid item={true} lg={6} md={6} xs={12} sm={12}>
                                 <Stack direction='column' spacing={2}>
-                                    <label className='conLeftItems'>Телефон :</label>
+                                    <label className='conLeftItems'>{t('phone')}:</label>
                                     <a href='tel:+99365656565' className='smallLink'>+993 65 65 65 65</a>
                                 </Stack>
                             </Grid>
-                            <Grid item lg={6} md={6} xs={12} sm={12}>
+                            <Grid item={true} lg={6} md={6} xs={12} sm={12}>
                                 <Stack direction='column' spacing={2}>
                                     <label className='conLeftItems'>E-Mail :</label>
                                     <a href='mailto:anyk.hasap@gmail.com' className='smallLink'>anyk.hasap@gmail.com</a>
@@ -77,44 +77,44 @@ const ContactUs = () => {
                             </Grid>
                         </Stack>
                         <Stack direction={'row'} marginTop={3} marginBottom={3}>
-                            <Grid item lg={6} md={6} xs={12} sm={12}>
+                            <Grid item={true} lg={6} md={6} xs={12} sm={12}>
                                 <Stack direction='column' spacing={2}>
-                                    <label className='conLeftItems'>Режим работы:</label>
-                                    <label className='conLeftItems'>Пн - Пт: 9:00 - 18:00</label>
+                                    <label className='conLeftItems'>{t('workH')}:</label>
+                                    <label className='conLeftItems'>{t('workD')}: 9:00 - 18:00</label>
                                 </Stack>
                             </Grid>
-                            <Grid item lg={6} md={6} xs={12} sm={12}>
+                            <Grid item={true} lg={6} md={6} xs={12} sm={12}>
                                 <Stack direction='column' spacing={2}>
-                                    <label className='conLeftItems'>Адрес:</label>
-                                    <label className='conLeftItems'>744028, город Ашхабад, ул.Огузхана, дом 203</label>
+                                    <label className='conLeftItems'>{t('adres')}:</label>
+                                    <label className='conLeftItems'>{t('address')}</label>
                                 </Stack>
                             </Grid>
                         </Stack>
-                        <Grid item lg={12} md={12} xs={12} sm={12}>
-                            <iframe src="https://yandex.ru/map-widget/v1/-/CCUBVYESCD" style={{ outline: 'none', border: 'none', marginBottom: '50px' }} width="90%" height="250" frameborder="1" allowfullscreen="true" ></iframe>
+                        <Grid item={true} lg={12} md={12} xs={12} sm={12}>
+                            <iframe src="https://yandex.ru/map-widget/v1/-/CCUBVYESCD" style={{ outline: 'none', border: 'none', marginBottom: '50px' }} width="90%" height="250"></iframe>
                         </Grid>
                     </Grid>
-                    <Grid item lg={6} md={6} xs={12} sm={12} pl={2} mt={9}>
+                    <Grid item={true} lg={6} md={6} xs={12} sm={12} pl={2} mt={9}>
                         <form ref={form} onSubmit={sendEmail}>
-                            <Grid item lg={12} md={12} xs={12} sm={12}>
+                            <Grid item={true} lg={12} md={12} xs={12} sm={12}>
                                 <Stack spacing={1.5} className='inputText'>
-                                    <TextField id="standard-basic" name="user_name" value={username} onChange={e => setUsername(e.target.value)} variant="standard" label="Ваше имя" InputLabelProps={{ className: 'textFielddd__label' }} required/>
+                                    <TextField id="standard-basic" name="user_name" value={username} onChange={e => setUsername(e.target.value)} variant="standard" label={t('name')} InputLabelProps={{ className: 'textFielddd__label' }} required/>
                                 </Stack>
                             </Grid>
-                            <Grid item lg={12} md={12} xs={12} sm={12}>
+                            <Grid item={true} lg={12} md={12} xs={12} sm={12}>
                                 <Stack spacing={1.5} marginTop={3}>
                                     <TextField id="standard-basic" type='email' name="user_email" value={mail} onChange={e => setMail(e.target.value)} label="E-mail" InputLabelProps={{ className: 'textFielddd__label' }} variant="standard" required/>
                                 </Stack>
                             </Grid>
-                            <Grid item lg={12} md={12} xs={12} sm={12}>
+                            <Grid item={true} lg={12} md={12} xs={12} sm={12}>
                                 <Stack spacing={1.5} marginTop={3}>
-                                    <TextField id="standard-multiline-static" name="message" value={message} onChange={e => setMessage(e.target.value)} InputLabelProps={{ className: 'textFielddd__label' }} multiline rows={4} label='Ваше сообщение' variant="standard" required/>
+                                    <TextField id="standard-multiline-static" name="message" value={message} onChange={e => setMessage(e.target.value)} InputLabelProps={{ className: 'textFielddd__label' }} multiline rows={4} label={t('yourMess')} variant="standard" required/>
                                 </Stack>
                             </Grid>
-                            <Grid item lg={12} md={12} xs={12} sm={12}>
+                            <Grid item={true} lg={12} md={12} xs={12} sm={12}>
                                 <Stack direction={'row'} mt={15} className='sendMessage'>
                                     <Button onClick={sendEmail} type='submit' variant="outlined" endIcon={<ArrowForwardIosIcon style={{ height: '11px' }} />}>
-                                       Отправить
+                                       {t('send')}
                                     </Button>
                                 </Stack>
                             </Grid>

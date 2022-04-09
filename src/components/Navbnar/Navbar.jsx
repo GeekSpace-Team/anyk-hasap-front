@@ -160,12 +160,12 @@ const Navbar = () => {
         <Container maxWidth="lg">
           <Grid container spacing={2} alignItems="center">
 
-            <Grid item xs={3}>
+            <Grid item={true} xs={3}>
               <NavLink to="/">
                 <img src='./img/AnykLogo.svg' style={{ height: '60px',width:'auto' }} />
               </NavLink>
             </Grid>
-            <Grid item xs={7}>
+            <Grid item={true} xs={7}>
             <Stack justifyContent={'center'} direction={'row'}>
               <NavMenu>
                 <NavLink to="/"  className='navBarItem'>
@@ -183,7 +183,7 @@ const Navbar = () => {
               </NavMenu>
               </Stack>
             </Grid>
-            <Grid item xs={2}>
+            <Grid item={true} xs={2}>
               <Stack justifyContent={'flex-end'} direction={'row'}>
               <NavBtn>
                 <select 
