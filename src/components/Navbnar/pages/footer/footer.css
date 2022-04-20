@@ -27,7 +27,7 @@
     font-size:16px;
 }
 
-@media (max-width: 768px)
+@media screen and (max-width: 768px)
 {
     .navMedia {
         margin-top: 20px;
@@ -40,6 +40,9 @@
     .contactMedia{
         margin-top: 30px;
         margin-left: 30px;
+    }
+    .footerImgg {
+        padding-left: 30px;
     }
 }
 
