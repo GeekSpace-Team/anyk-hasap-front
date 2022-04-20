@@ -5,7 +5,6 @@ import {
   Bars,
   NavMenu,
   NavBtn,
-  NavBtnLink,
   InfoContainer
 } from './NavbarElements';
 import Box from '@mui/material/Box';
@@ -28,15 +27,30 @@ import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import { useTranslation } from "react-i18next";
 import { i18n } from '../../Language/LangConfig';
+import {useLocation } from 'react-router-dom'
 
 
 const useStyles = makeStyles({
   paper: {
-    background: "blue"
+    background: "black"
   }
 });
 
 const Navbar = () => {
+
+  window.addEventListener("scroll", function() {
+    const header = document.querySelector(".header")
+    console.log(header)
+    header.classList.toggle("active", window.scrollY > 100 ) 
+})
+
+const location = useLocation()
+
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, [location])
+
+
   const { t } = useTranslation();
   const [state, setState] = React.useState({
     right: false,
@@ -110,7 +124,7 @@ const Navbar = () => {
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
-      style={{ background: 'black' }}
+      style={{ background: 'white' }}
     >
 
       <Stack direction={'column'}>
@@ -145,62 +159,63 @@ const Navbar = () => {
   );
 
   return (
-    <>
+    <div className='fixedFor' >
      <Container maxWidth="lg">
       <InfoContainer>
         <Stack alignItems={'flex-end'} spacing={1} justifyContent={'flex-end'} direction={'row'}>
-          <img src='./img/mail.svg' style={{height:'18px', color:'#000'}}/>
+          <img src='./img/mail.svg' style={{height:'18px'}}/>
           <a href='mailto:anyk.hasap@gmail.com' className='smallLink'>anyk.hasap@gmail.com</a>
           <img src='./img/phone.svg' style={{height:'18px'}}/>
           <a href='tel:+99365 65 53 35 34' className='smallLink'>+99365 53 35 34 </a>
         </Stack>
       </InfoContainer>
       </Container>
-      <Nav>
-        <Container maxWidth="lg">
-          <Grid container spacing={2} alignItems="center">
+        <Nav className="header bgGlass">
+         
+          <Container maxWidth="lg">
+            <Grid container spacing={2} alignItems="center">
 
-            <Grid item={true} xs={3}>
-              <NavLink to="/">
-                <img src='./img/AnykLogo.svg' style={{ height: '60px',width:'auto' }} />
-              </NavLink>
+              <Grid item={true} xs={3} display='flex' alignItems={'center'}>
+                <NavLink to="/">
+                  <img src='./img/loggo.png' style={{ height: '40px',width:'auto', display:'flex', alignItems:'center' }} />
+                </NavLink>
+              </Grid>
+              <Grid item={true} xs={7}>
+              <Stack justifyContent={'center'} direction={'row'}>
+                <NavMenu>
+                  <NavLink to="/"  className='navBarItem'>
+                  {t('homePage')}
+                  </NavLink>
+                  <NavLink to="/ourServices"  className='navBarItem'>
+                    {t('OurServices')}
+                  </NavLink>
+                  <NavLink to="/aboutUs"  className='navBarItem'>
+                  {t('Aboutus')}
+                  </NavLink>
+                  <NavLink to="/contacts"  className='navBarItem'>
+                  {t('Contacts')}
+                  </NavLink>
+                </NavMenu>
+                </Stack>
+              </Grid>
+              <Grid item={true} xs={2}>
+                <Stack justifyContent={'flex-end'} direction={'row'}>
+                <NavBtn>
+                  <select 
+                  onChange={e=>langChange(e.target.value)}
+                  value={lang}
+                  className='langSelect'>
+                    <option value="en">EN</option>
+                    <option value="tm">TM</option>
+                    <option value="ru">RU</option>
+                  </select>
+                </NavBtn>
+                <Bars onClick={toggleDrawer('right', true)} />
+                </Stack>
+              </Grid>
             </Grid>
-            <Grid item={true} xs={7}>
-            <Stack justifyContent={'center'} direction={'row'}>
-              <NavMenu>
-                <NavLink to="/"  className='navBarItem'>
-                {t('homePage')}
-                </NavLink>
-                <NavLink to="/ourServices"  className='navBarItem'>
-                  {t('OurServices')}
-                </NavLink>
-                <NavLink to="/aboutUs"  className='navBarItem'>
-                {t('Aboutus')}
-                </NavLink>
-                <NavLink to="/contacts"  className='navBarItem'>
-                {t('Contacts')}
-                </NavLink>
-              </NavMenu>
-              </Stack>
-            </Grid>
-            <Grid item={true} xs={2}>
-              <Stack justifyContent={'flex-end'} direction={'row'}>
-              <NavBtn>
-                <select 
-                onChange={e=>langChange(e.target.value)}
-                value={lang}
-                className='langSelect'>
-                  <option value="en">EN</option>
-                  <option value="tm">TM</option>
-                  <option value="ru">RU</option>
-                </select>
-              </NavBtn>
-              <Bars onClick={toggleDrawer('right', true)} />
-              </Stack>
-            </Grid>
-          </Grid>
-        </Container>
-      </Nav>
+          </Container>
+        </Nav>
 
 
       <SwipeableDrawer
@@ -212,7 +227,7 @@ const Navbar = () => {
       >
         {list('right')}
       </SwipeableDrawer>
-    </>
+    </div>
   )
 }
 

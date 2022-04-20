@@ -1,5 +1,5 @@
 .homeFirstContianer{
-    background-image: url(../../../../../public/img/BaseImg.png);
+    background-image: url(../../../../../public/img/leather.jpg );
     background-size: 100% 130%;
     background-repeat: no-repeat;
     background-position: center;
@@ -8,9 +8,18 @@
     outline: none;
     background-color: black;
 }
+.firstContaiiner{
+    background-image: url(../../../../../public/img/leather.jpg );
+    background-repeat: repeat;
+    border: none;
+    outline: none;
+}
+.secondContaiiner{
+background-color: rgba(255, 255, 255, 0.808);
+}
 
 .transparent{
-    background: linear-gradient(89.98deg, rgba(42, 35, 86, 0.3) -3.37%, rgba(42, 35, 86, 0) 103.15%);
+    background: linear-gradient(89.98deg, rgba(42, 35, 86, 0.842) -3.37%, rgba(42, 35, 86, 0) 103.15%);
     backdrop-filter: blur(1px);
     height: auto;
     padding-bottom: 100px;
@@ -24,13 +33,13 @@
 
 .homePageLabel{
     width: 50%;
-    padding-top: 30px;
+    padding-top: 100px;
 }
 
 .lableName{
     text-transform: uppercase;
     color: #FFFFFF;
-    font-size: 2.3vw;
+    font-size: 2vw;
     font-family: 'semiBold';
    
 }
@@ -39,33 +48,33 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-left: -13px;
-    line-height: 1.5;
-    margin-top: 6%;
+    line-height: 2;
+    margin-top: 7%;
     font-family: 'regularFont';
+}
+.homePageLabel label {
+    line-height: 2;
 }
 .learnMoreButton  {
     width: 100%;
-    margin-top: 6%;
+    margin-top: 10%;
 }
 .learnMoreButton button {
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
     padding-top: 1.5%;
     cursor: pointer;
     padding-bottom: 1.5%;
     padding-left: 5%;
+    border: 1px solid #AA323C;
     padding-right: 5%;
     font-size: 1vw;
-    /* background: linear-gradient(89.98deg, rgba(42, 35, 86, 0.3) -3.37%, rgba(42, 35, 86, 0) 103.15%); */
-    background-color: black;
+    background: transparent;
     box-sizing: border-box;
-    border:none;
     display: flex;
     align-items: center;
     font-family: 'regularFont';
 }
-.learnMoreButton button:hover{
-    background-color: #000;
-}
+
 
 .learnMoreButton img {
     padding-left: 10px;
@@ -85,8 +94,8 @@
 .aboutServ{
     display: flex;
     justify-content: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 70px;
+    padding-top: 40px;
 }
 .homeInfoContainer{
     padding-top: 30px;
@@ -157,9 +166,14 @@
 }
 .homeAboutUsContainer p {
     color: white;
-    font-size: 1vw;
+    font-size: 0.5vw;
     font-family: 'regularFont';
+    line-height: 1.3;
     text-align: justify;
+    font-weight: 100;
+}
+.secondLearnButton {
+    padding-bottom: 50px;
 }
 .underLine{
     width: 45%;
@@ -193,11 +207,14 @@
         font-size: 12px;
     }
     .learnMoreButton button{
-        font-size: 12px;
+        font-size: 8px;
         display: block;
         align-items: baseline;
-        padding-top: 3%;
-        padding-bottom: 3%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
     }
     .homeAboutUsContainer label {
         font-size: 30px;

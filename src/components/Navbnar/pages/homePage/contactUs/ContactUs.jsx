@@ -5,13 +5,13 @@ import { Grid, Stack } from '@mui/material';
 import { i18n } from '../../../../../Language/LangConfig';
 import styled from 'styled-components'
 import TextField from '@mui/material/TextField';
-import './contactUs.css';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Button from '@mui/material/Button';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { showError, showSuccess, showWarning } from '../../../../../toast/toast';
+import './contactUs.css';
 
 
 const ContactUs = () => {
@@ -66,7 +66,7 @@ const ContactUs = () => {
                             <Grid item={true} lg={6} md={6} xs={12} sm={12}>
                                 <Stack direction='column' spacing={2}>
                                     <label className='conLeftItems'>{t('phone')}:</label>
-                                    <a href='tel:+99365656565' className='smallLink'>+993 65 65 65 65</a>
+                                    <a href='tel:+99365656565' className='smallLink'>+993  65 53 35 34</a>
                                 </Stack>
                             </Grid>
                             <Grid item={true} lg={6} md={6} xs={12} sm={12}>
@@ -85,8 +85,8 @@ const ContactUs = () => {
                             </Grid>
                             <Grid item={true} lg={6} md={6} xs={12} sm={12}>
                                 <Stack direction='column' spacing={2}>
-                                    <label className='conLeftItems'>{t('adres')}:</label>
-                                    <label className='conLeftItems'>{t('address')}</label>
+                                    <label  className='conLeftItems'>{t('adres')}:</label>
+                                    <label style={{width: '90%'}} className='conLeftItems'>{t('address')}</label>
                                 </Stack>
                             </Grid>
                         </Stack>
@@ -96,24 +96,24 @@ const ContactUs = () => {
                     </Grid>
                     <Grid item={true} lg={6} md={6} xs={12} sm={12} pl={2} mt={9}>
                         <form ref={form} onSubmit={sendEmail}>
-                            <Grid item={true} lg={12} md={12} xs={12} sm={12}>
+                            <Grid item={true} lg={12} md={12} xs={12} sm={12} mt={5}>
                                 <Stack spacing={1.5} className='inputText'>
                                     <TextField id="standard-basic" name="user_name" value={username} onChange={e => setUsername(e.target.value)} variant="standard" label={t('name')} InputLabelProps={{ className: 'textFielddd__label' }} required/>
                                 </Stack>
                             </Grid>
-                            <Grid item={true} lg={12} md={12} xs={12} sm={12}>
-                                <Stack spacing={1.5} marginTop={3}>
+                            <Grid item={true} lg={12} md={12} xs={12} sm={12} mt={10} mt={10}>
+                                <Stack spacing={1.5} marginTop={5}>
                                     <TextField id="standard-basic" type='email' name="user_email" value={mail} onChange={e => setMail(e.target.value)} label="E-mail" InputLabelProps={{ className: 'textFielddd__label' }} variant="standard" required/>
                                 </Stack>
                             </Grid>
                             <Grid item={true} lg={12} md={12} xs={12} sm={12}>
-                                <Stack spacing={1.5} marginTop={3}>
-                                    <TextField id="standard-multiline-static" name="message" value={message} onChange={e => setMessage(e.target.value)} InputLabelProps={{ className: 'textFielddd__label' }} multiline rows={4} label={t('yourMess')} variant="standard" required/>
+                                <Stack spacing={1.5} marginTop={5}>
+                                    <TextField id="standard-multiline-static" name="message" value={message} onChange={e => setMessage(e.target.value)} InputLabelProps={{ className: 'textFielddd__label' }} multiline rows={6} label={t('yourMess')} variant="standard" required/>
                                 </Stack>
                             </Grid>
                             <Grid item={true} lg={12} md={12} xs={12} sm={12}>
                                 <Stack direction={'row'} mt={15} className='sendMessage'>
-                                    <Button onClick={sendEmail} type='submit' variant="outlined" endIcon={<ArrowForwardIosIcon style={{ height: '11px' }} />}>
+                                    <Button onClick={sendEmail} type='submit' variant="outlined" endIcon={<ArrowForwardIosIcon style={{ height: '11px', color: '#AA323C' }} />}>
                                        {t('send')}
                                     </Button>
                                 </Stack>

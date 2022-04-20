@@ -23,7 +23,9 @@ const AboutUs = () => {
     }
   }, []);
   return (
-    <div>
+    <div className='firstContaiiner'>
+      <div className='secondContaiiner'>
+      
       <div className="imgContainerAbout">
         <img src='./img/aboutUs.png' />
       </div>
@@ -92,6 +94,7 @@ const AboutUs = () => {
       {/* <Customer /> */}
       {/* <DemoCarousel /> */}
       <FooTter />
+      </div>
     </div>
   )
 }

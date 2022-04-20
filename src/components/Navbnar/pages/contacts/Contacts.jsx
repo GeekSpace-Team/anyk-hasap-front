@@ -6,7 +6,8 @@ import ContactUs from '../homePage/contactUs/ContactUs'
 
 const Contacts = () => {
   return (
-    <div>
+    <div className='firstContaiiner'>
+      <div className='secondContaiiner'>
  <div className="imgContainerAbout">
         <img src='./img/contakt.png' />
       </div>
@@ -14,6 +15,7 @@ const Contacts = () => {
 {/* <Customer /> */}
 {/* <DemoCarousel /> */}
       <FooTter />
+      </div>
     </div>
   )
 }

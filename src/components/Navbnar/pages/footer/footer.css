@@ -1,13 +1,32 @@
-.FooterContainer{
+/* .FooterContainer{
     background-color: #000;
     height: auto;
-}
+} */
+
+
+.FooterContainer {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.664);
+    overflow: hidden;
+  }
+  
+  .FooterContainer:before{
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* filter: blur(10px); */
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0);
+  }
 
 .footerTitle{
-    color: #fff;
+    color: #000;
     font-family:'regularFont';
     font-size:16px;
 }
+
 @media (max-width: 768px)
 {
     .navMedia {

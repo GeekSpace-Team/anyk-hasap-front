@@ -4,11 +4,11 @@ import Container from '@mui/material/Container';
 import { Grid, Stack } from '@mui/material';
 import { i18n } from '../../../../Language/LangConfig';
 import { useTranslation } from 'react-i18next';
-import Accordion from '@mui/material/Accordion';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+// import Accordion from '@mui/material/Accordion';
+// import AccordionDetails from '@mui/material/AccordionDetails';
+// import AccordionSummary from '@mui/material/AccordionSummary';
+// import Typography from '@mui/material/Typography';
+// import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import FooTter from '../footer/FooTter';
 import styled from 'styled-components'
 import ContactUs from '../homePage/contactUs/ContactUs';
@@ -33,42 +33,101 @@ const OurServices = () => {
   };
   return (
     <div className='ourServicContainer'>
-      <div className="imgContainer">
-        <img src="./img/ourServices.png" alt="" />
-      </div>
-      <Container maxWidth="lg">
-        <div className='homeSecondContainer'>
-          {/* <div className='ourServ'>
-            <Stack direction={'column'} spacing={1}>
-              <label>{t('OurServices')}</label>
-              <Stack justifyContent={'center'} alignItems='center'>
-                <div className='underLineE'></div>
-              </Stack>
-            </Stack>
-          </div> */}
-          <TitleName>
-            <span>{t('OurServices')}</span>
-          </TitleName>
-          <div className='aboutServ'>
-            {/* <p>{t('ourServicText')}</p> */}
-            <p>При выборе аудиторской компании, наряду со стоимостью услуг, важную роль играют деловая репутация и опыт. Поэтому, мы беремся только за ту работу, которую можем выполнить действительно хорошо, с полной ответственностью и гарантией качества!</p>
+      <div className='firstContaiiner'>
+        <div className='secondContaiiner'>
+          <div className="imgContainer">
+            <img src="./img/ourServices.png" alt="" />
           </div>
+          <Container maxWidth="lg">
+            <div className='homeSecondContainer'>
+              {/* <div className='ourServ'>
+                <Stack direction={'column'} spacing={1}>
+                  <label>{t('OurServices')}</label>
+                  <Stack justifyContent={'center'} alignItems='center'>
+                    <div className='underLineE'></div>
+                  </Stack>
+                </Stack>
+              </div> */}
+              <TitleName>
+                <span>{t('OurServices')}</span>
+              </TitleName>
+              <div className='aboutServ'>
+                {/* <p>{t('ourServicText')}</p> */}
+                <p>При выборе аудиторской компании, наряду со стоимостью услуг, важную роль играют деловая репутация и опыт. Поэтому, мы беремся только за ту работу, которую можем выполнить действительно хорошо, с полной ответственностью и гарантией качества!</p>
+              </div>
+            </div>
+              <Grid container>
+               
+
+
+              <Grid item lg={12} md={12} xs={12} sm={12} mb={7}  >
+           <Stack direction='row' gap={0.2}>
+             <img src="img/thirdImg.png" style={{height:'120px', width:'120px'}} alt="" />
+             <Stack direction='column' gap={2} width='60%'>
+               <label>Инициативный аудит</label>
+               <p>проверка финансовой деятельности предприятия для подготовки к предстоящей налоговой проверке. Составление отчёта и предложении по оптимизации бизнес-процессов, коррекции существующих несовершенств и профилактики возможных упущений</p>
+             </Stack>
+           </Stack>
+         </Grid>
+
+         <Grid item lg={12} md={12} xs={12} sm={12} mb={7} >
+                  <Stack direction='row' gap={0/2}>
+                    <img src="img/thirdImg.png" style={{height:'120px', width:'120px'}} alt="" />
+                    <Stack direction='column' gap={2} width='60%'>
+                      <label>Налоговое консультирование </label>
+                      <p>специалисты «Anyk Hasap» возьмут на себя ответственность за разработку учетной политики и рекомендации по оптимизации налогообложения</p>
+                    </Stack>
+                  </Stack>
+                </Grid>
+              </Grid>
+
+         <Grid item lg={12} md={12} xs={12} sm={12} mb={7} >
+           <Stack direction='row' gap={0.2}>
+             <img src="img/thirdImg.png" style={{height:'120px', width:'120px'}} alt="" />
+             <Stack direction='column' gap={2} width='60%'>
+               <label>Управленческое консультирование </label>
+               <p>«Anyk Hasap» содействует руководству предприятий в улучшении качества работы и управляемости компании, повышении эффективности ее деятельности в целом и увеличении индивидуальной производительности труда каждого сотрудника.</p>
+             </Stack>
+           </Stack>
+         </Grid>
+
+         <Grid item lg={12} md={12} xs={12} sm={12} mb={7} >
+           <Stack direction='row' gap={0.2}>
+             <img src="img/thirdImg.png" style={{height:'120px', width:'120px'}} alt="" />
+             <Stack direction='column' gap={2} width='60%'>
+               <label>Оценка надёжности системы внутреннего контроля </label>
+               <p>контроль надежности и степень выявления и устранения искажении в предоставляемой информации, а также контроль своевременности предоставления отчетов.</p>
+             </Stack>
+           </Stack>
+         </Grid>
+
+         <Grid item lg={12} md={12} xs={12} sm={12} mb={7} >
+           <Stack direction='row' gap={0.2}>
+             <img src="img/thirdImg.png" style={{height:'120px', width:'120px'}} alt="" />
+             <Stack direction='column' gap={2} width='60%'>
+               <label>Калькуляции </label>
+               <p>подготовка предложении по выбору метода распределения расходов, составление плановых и фактических калькуляций для определения себестоимости работ, услуг и произведенных продукции. </p>
+             </Stack>
+           </Stack>
+         </Grid>
+
+         <Grid item lg={12} md={12} xs={12} sm={12} mb={7} >
+           <Stack direction='row' gap={0.2}>
+             <img src="img/thirdImg.png" style={{height:'120px', width:'120px'}} alt="" />
+             <Stack direction='column' gap={2} width='60%'>
+               <label>Инициативный аудит</label>
+               <p>проверка финансовой деятельности предприятия для подготовки к предстоящей налоговой проверке. Составление отчёта и предложении по оптимизации бизнес-процессов, коррекции существующих несовершенств и профилактики возможных упущений</p>
+             </Stack>
+           </Stack>
+         </Grid>
+
+
+            {/* <AccorDion /> */}
+            <ContactUs />
+          </Container>
+          <FooTter />
         </div>
-        <Stack className='newOurServices' marginLeft={'12%'} spacing={3} mt={5} mb={7}>
-          <label>- Обязательный аудит</label>
-          <label>- Инициативный аудит</label>
-          <label>- Налоговое консультирование</label>
-          <label>- Управленческое консультирование</label>
-          <label>- Оценка надёжности системы внутреннего контроля</label>
-          <label>- Калькуляции</label>
-        </Stack>
-
-
-
-        {/* <AccorDion /> */}
-        <ContactUs />
-      </Container>
-      <FooTter />
+      </div>
     </div>
   )
 }
