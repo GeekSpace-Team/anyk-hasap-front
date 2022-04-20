@@ -2,7 +2,7 @@ import React,{useEffect,Suspense} from 'react';
 import {
   BrowserRouter,
   Routes,
-  Route,Navigate
+  Route,Navigate, HashRouter
 } from "react-router-dom";
 import './App.css';
 import Navbar from './components/Navbnar/Navbar';
@@ -25,7 +25,7 @@ function App() {
   return (
     
     <Suspense fallback={<h3>Loading...</h3>}>
-    <BrowserRouter history={history}>
+    <HashRouter history={history}>
         <Navbar/>
       <Routes>
       <Route path="/" element={<HomePage/>} />
@@ -33,7 +33,7 @@ function App() {
       <Route path="/aboutUs" element={<AboutUs/>} />
       <Route path="/contacts" element={<Contacts/>} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </Suspense>
   );
 }

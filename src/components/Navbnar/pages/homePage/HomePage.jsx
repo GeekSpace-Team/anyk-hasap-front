@@ -68,18 +68,28 @@ const HomePage = () => {
           </div>
           <div className='aboutServ'>
             {/* <p>{t('homeUnderTitle')}</p> */}
-            <p>При выборе аудиторской компании, наряду со стоимостью услуг, важную роль играют деловая репутация и опыт. Поэтому, мы беремся только за ту работу, которую можем выполнить действительно хорошо, с полной ответственностью и гарантией качества!</p>
+            <p  style={{lineHeight:'1.4'}}>При выборе аудиторской компании, наряду со стоимостью услуг, важную роль играют деловая репутация и опыт. Поэтому, мы беремся только за ту работу, которую можем выполнить действительно хорошо, с полной ответственностью и гарантией качества!</p>
           </div>
         </div>
       </Container>
       <Container maxWidth="lg">
        <Grid container>
+       <Grid item lg={4} md={4} xs={12} sm={6} mb={7}  >
+           <Stack direction='row' gap={0.2}>
+             <img src="img/thirdImg.png" style={{height:'120px', width:'120px'}} alt="" />
+             <Stack direction='column' gap={2} width='60%'>
+               <label style={{fontFamily:'regularFont', fontWeight:"bold", textTransform:"uppercase", lineHeight:"1.4"}}>Обязательный аудит </label>
+               <p style={{fontFamily:"regularFont", lineHeight:"1.3"}}>Ежегодная независимая проверка финансово-хозяйственной деятельности компании. В рамках обязательного аудита проверяется полнота и корректность составления финансовой отчетности.</p>
+             </Stack>
+           </Stack>
+         </Grid>
+
          <Grid item lg={4} md={4} xs={12} sm={6} mb={7}  >
            <Stack direction='row' gap={0.2}>
              <img src="img/thirdImg.png" style={{height:'120px', width:'120px'}} alt="" />
              <Stack direction='column' gap={2} width='60%'>
-               <label>Инициативный аудит</label>
-               <p>проверка финансовой деятельности предприятия для подготовки к предстоящей налоговой проверке. Составление отчёта и предложении по оптимизации бизнес-процессов, коррекции существующих несовершенств и профилактики возможных упущений</p>
+               <label style={{fontFamily:'regularFont', fontWeight:"bold", textTransform:"uppercase", lineHeight:"1.4"}}>Инициативный аудит</label>
+               <p style={{fontFamily:"regularFont", lineHeight:"1.3"}}>Проверка финансовой деятельности предприятия для подготовки к предстоящей налоговой проверке. Составление отчёта и предложении по оптимизации бизнес-процессов, коррекции существующих несовершенств и профилактики возможных упущений</p>
              </Stack>
            </Stack>
          </Grid>
@@ -88,8 +98,8 @@ const HomePage = () => {
            <Stack direction='row' gap={0/2}>
              <img src="img/thirdImg.png" style={{height:'120px', width:'120px'}} alt="" />
              <Stack direction='column' gap={2} width='60%'>
-               <label>Налоговое консультирование </label>
-               <p>специалисты «Anyk Hasap» возьмут на себя ответственность за разработку учетной политики и рекомендации по оптимизации налогообложения</p>
+               <label style={{fontFamily:'regularFont', fontWeight:"bold", textTransform:"uppercase", lineHeight:"1.4"}}>Налоговое консультирование </label>
+               <p style={{fontFamily:"regularFont", lineHeight:"1.3"}}>Специалисты «Anyk Hasap» возьмут на себя ответственность за разработку учетной политики и рекомендации по оптимизации налогообложения</p>
              </Stack>
            </Stack>
          </Grid>
@@ -98,8 +108,8 @@ const HomePage = () => {
            <Stack direction='row' gap={0.2}>
              <img src="img/thirdImg.png" style={{height:'120px', width:'120px'}} alt="" />
              <Stack direction='column' gap={2} width='60%'>
-               <label>Управленческое консультирование </label>
-               <p>«Anyk Hasap» содействует руководству предприятий в улучшении качества работы и управляемости компании, повышении эффективности ее деятельности в целом и увеличении индивидуальной производительности труда каждого сотрудника.</p>
+               <label style={{fontFamily:'regularFont', fontWeight:"bold", textTransform:"uppercase", lineHeight:"1.4"}}>Управленческое консультирование </label>
+               <p style={{fontFamily:"regularFont", lineHeight:"1.3"}}>«Anyk Hasap» содействует руководству предприятий в улучшении качества работы и управляемости компании, повышении эффективности ее деятельности в целом и увеличении индивидуальной производительности труда каждого сотрудника.</p>
              </Stack>
            </Stack>
          </Grid>
@@ -108,8 +118,8 @@ const HomePage = () => {
            <Stack direction='row' gap={0.2}>
              <img src="img/thirdImg.png" style={{height:'120px', width:'120px'}} alt="" />
              <Stack direction='column' gap={2} width='60%'>
-               <label>Оценка надёжности системы внутреннего контроля </label>
-               <p>контроль надежности и степень выявления и устранения искажении в предоставляемой информации, а также контроль своевременности предоставления отчетов.</p>
+               <label style={{fontFamily:'regularFont', fontWeight:"bold", textTransform:"uppercase", lineHeight:"1.4"}}>Оценка надёжности системы внутреннего контроля </label>
+               <p style={{fontFamily:"regularFont", lineHeight:"1.3"}}>Контроль надежности и степень выявления и устранения искажении в предоставляемой информации, а также контроль своевременности предоставления отчетов.</p>
              </Stack>
            </Stack>
          </Grid>
@@ -118,18 +128,8 @@ const HomePage = () => {
            <Stack direction='row' gap={0.2}>
              <img src="img/thirdImg.png" style={{height:'120px', width:'120px'}} alt="" />
              <Stack direction='column' gap={2} width='60%'>
-               <label>Калькуляции </label>
-               <p>подготовка предложении по выбору метода распределения расходов, составление плановых и фактических калькуляций для определения себестоимости работ, услуг и произведенных продукции. </p>
-             </Stack>
-           </Stack>
-         </Grid>
-
-         <Grid item lg={4} md={4} xs={12} sm={6} mb={7} >
-           <Stack direction='row' gap={0.2}>
-             <img src="img/thirdImg.png" style={{height:'120px', width:'120px'}} alt="" />
-             <Stack direction='column' gap={2} width='60%'>
-               <label>Инициативный аудит</label>
-               <p>проверка финансовой деятельности предприятия для подготовки к предстоящей налоговой проверке. Составление отчёта и предложении по оптимизации бизнес-процессов, коррекции существующих несовершенств и профилактики возможных упущений</p>
+               <label style={{fontFamily:'regularFont', fontWeight:"bold", textTransform:"uppercase", lineHeight:"1.4"}}>Калькуляции </label>
+               <p style={{fontFamily:"regularFont", lineHeight:"1.3"}}>Подготовка предложении по выбору метода распределения расходов, составление плановых и фактических калькуляций для определения себестоимости работ, услуг и произведенных продукции. </p>
              </Stack>
            </Stack>
          </Grid>

@@ -177,7 +177,7 @@ const location = useLocation()
 
               <Grid item={true} xs={3} display='flex' alignItems={'center'}>
                 <NavLink to="/">
-                  <img src='./img/loggo.png' style={{ height: '40px',width:'auto', display:'flex', alignItems:'center' }} />
+                  <img src='./img/loggo.png' style={{ height: '45px',width:'auto', display:'flex', alignItems:'center' }} />
                 </NavLink>
               </Grid>
               <Grid item={true} xs={7}>
