@@ -20,4 +20,7 @@ const Contacts = () => {
   )
 }
 
+// logany ulaltmaly
+// 
+
 export default Contacts

@@ -61,15 +61,14 @@ const ContactUs = () => {
                         <div className='ourServ'>
                             
                         </div>
-                        
-                        <Stack direction={'row'} marginTop={3}>
+                        <Stack direction={'row'} gap={-50} marginTop={3}>
                             <Grid item={true} lg={6} md={6} xs={12} sm={12}>
                                 <Stack direction='column' spacing={2}>
                                     <label className='conLeftItems'>{t('phone')}:</label>
                                     <a href='tel:+99365656565' className='smallLink'>+993  65 53 35 34</a>
                                 </Stack>
                             </Grid>
-                            <Grid item={true} lg={6} md={6} xs={12} sm={12}>
+                            <Grid item={true} lg={6} md={6} ml={-12} xs={12} sm={12}>
                                 <Stack direction='column' spacing={2}>
                                     <label className='conLeftItems'>E-Mail :</label>
                                     <a href='mailto:anyk.hasap@gmail.com' className='smallLink'>anyk.hasap@gmail.com</a>
@@ -83,10 +82,10 @@ const ContactUs = () => {
                                     <label className='conLeftItems'>{t('workD')}: 9:00 - 18:00</label>
                                 </Stack>
                             </Grid>
-                            <Grid item={true} lg={6} md={6} xs={12} sm={12}>
+                            <Grid item={true} lg={6} md={6} xs={12} ml={-12} sm={12}>
                                 <Stack direction='column' spacing={2}>
                                     <label  className='conLeftItems'>{t('adres')}:</label>
-                                    <label style={{width: '90%'}} className='conLeftItems'>{t('address')}</label>
+                                    <label style={{width:'110%'}} className='conLeftItems'>{t('address')}</label>
                                 </Stack>
                             </Grid>
                         </Stack>

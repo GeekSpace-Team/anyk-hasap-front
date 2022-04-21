@@ -20,7 +20,6 @@ import MailIcon from '@mui/icons-material/Mail';
 import { makeStyles } from '@mui/styles';
 import { NavLink as Link } from 'react-router-dom'
 import { Stack } from '@mui/material';
-import './navbar.css';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
@@ -28,6 +27,7 @@ import Paper from '@mui/material/Paper';
 import { useTranslation } from "react-i18next";
 import { i18n } from '../../Language/LangConfig';
 import {useLocation } from 'react-router-dom'
+import './navbar.css';
 
 
 const useStyles = makeStyles({
@@ -177,7 +177,7 @@ const location = useLocation()
 
               <Grid item={true} xs={3} display='flex' alignItems={'center'}>
                 <NavLink to="/">
-                  <img src='./img/loggo.png' style={{ height: '45px',width:'auto', display:'flex', alignItems:'center' }} />
+                  <img src='./img/loggo.png' style={{ height: '50px', paddingBottom:'10px',width:'auto', display:'flex', alignItems:'center' }} />
                 </NavLink>
               </Grid>
               <Grid item={true} xs={7}>

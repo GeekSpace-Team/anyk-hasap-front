@@ -44,7 +44,7 @@ const HomePage = () => {
         <div className='transparent'>
           <Container maxWidth="lg">
             <div className='homePageLabel'>
-              <label className='lableName'>Надёжный бизнес - широкие возможности</label>
+              <label className='lableName'>Надёжный бизнес <br /> широкие возможности</label>
               <p style={{marginLeft:"7px"}}>«Anyk Hasap» стремится принести реальную пользу вашему бизнесу.</p>
               <div className='learnMoreButton'>
 
@@ -160,7 +160,9 @@ const HomePage = () => {
               })}
               <div id='secondLearnButton ' style={{paddingBottom:'80px'}} className='learnMoreButton secondLearnButton'>
                   {/* <button onClick={() => setClicked(!clicked)} key={'keeey'} style={{ paddingTop: '1.5%', paddingBottom: '1.5%', paddingRight: '5%', paddingLeft: '5%', border:'none' }}>{t('learnMore')}<img src="./img/rightArrow.svg" alt='#' /></button> */}
-                  <Button  onClick={() => setClicked(!clicked)} key={'keeey'} type='submit' variant="outlined" endIcon={<ArrowForwardIosIcon style={{ height: '15px', color: '#AA323C' }} />}>{t('learnMore')}</Button>
+                  <NavLink to="/aboutUs" className='navBarItem'>
+                    <Button  type='submit' variant="outlined" endIcon={<ArrowForwardIosIcon style={{ height: '15px', color: '#AA323C' }} />}>{t('learnMore')}</Button>
+                  </NavLink>
               </div>
               </div>
             </Stack>
