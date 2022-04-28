@@ -7,6 +7,7 @@
     border: none;
     outline: none;
     background-color: black;
+    padding-bottom: 100px;
 }
 .firstContaiiner{
     background-image: url(../../../../../public/img/leather.jpg );
@@ -18,12 +19,12 @@
 background-color: rgba(255, 255, 255, 0.808);
 }
 
-.transparent{
+/* .transparent{
     background: linear-gradient(89.98deg, rgba(42, 35, 86, 0.842) -3.37%, rgba(42, 35, 86, 0) 103.15%);
     backdrop-filter: blur(1px);
     height: auto;
     padding-bottom: 100px;
-}
+} */
 .newOurServices label {
     font-family: 'regularFont';
     letter-spacing: 1.5px;
