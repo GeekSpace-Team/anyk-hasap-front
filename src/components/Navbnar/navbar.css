@@ -44,7 +44,7 @@
   content: "";
   position: absolute;
   background: inherit;
-  background-image: url(../../../public/img/BaseImg.jpg );
+  background-image: url(../../../public/img/ForNav.jpeg );
   z-index: -1;
   top: 0;
   left: 0;
@@ -57,12 +57,13 @@
 }
 .header {
   background-attachment: fixed;
-  background-image: url(../../../public/img/BaseImg.jpg );
+  background-image: url(../../../public/img/ForNav.jpeg );
 }
 .kerpich {
-  background-image: url(../../../public/img/BaseImg.jpg );
+  background-image: url(../../../public/img/ForNav.jpeg );
   width: 100%;
 }
+
 .header.active {
   height: 10vh;
   position: fixed;
