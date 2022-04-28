@@ -70,7 +70,7 @@ const FooTter = () => {
                                     </Stack>
                                     <Stack direction={'row'} spacing={2}>
                                         <img src='./img/mailFooter.svg' alt='#' style={{ height: '18px' }} />
-                                        <a href='mailto:anyk.hasap@gmail.com' style={{ textDecoration: 'none' }} className='footerTitle'>anyk.hasap@gmail.com</a>
+                                        <a href='mailto:anyk.hasap@gmail.com' style={{ textDecoration: 'none' }} className='footerTitle'>info@anykhasap.com</a>
                                     </Stack>
                                     <Stack direction={'row'} spacing={2}>
                                         <img src='./img/locationFooter.svg' alt='#' style={{ height: '18px' }} />

@@ -160,16 +160,18 @@ const location = useLocation()
 
   return (
     <div className='fixedFor' >
+       <div className="kerpich">
      <Container maxWidth="lg">
-      <InfoContainer>
-        <Stack alignItems={'flex-end'} spacing={1} justifyContent={'flex-end'} direction={'row'}>
-          <img src='./img/mail.svg' style={{height:'18px'}}/>
-          <a href='mailto:anyk.hasap@gmail.com' className='smallLink'>anyk.hasap@gmail.com</a>
-          <img src='./img/phone.svg' style={{height:'18px'}}/>
-          <a href='tel:+99365 65 53 35 34' className='smallLink'>+99365 53 35 34 </a>
-        </Stack>
-      </InfoContainer>
+        <InfoContainer>
+          <Stack alignItems={'flex-end'} spacing={1} justifyContent={'flex-end'} direction={'row'}>
+            <img src='./img/mail.svg' style={{height:'18px'}}/>
+            <a href='mailto:anyk.hasap@gmail.com' className='smallLink'>info@anykhasap.com</a>
+            <img src='./img/phone.svg' style={{height:'18px'}}/>
+            <a href='tel:+99365 65 53 35 34' className='smallLink'>+99365 53 35 34 </a>
+          </Stack>
+        </InfoContainer>
       </Container>
+      </div>
         <Nav className="header bgGlass">
          
           <Container maxWidth="lg">

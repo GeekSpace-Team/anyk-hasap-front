@@ -71,7 +71,7 @@ const ContactUs = () => {
                             <Grid item={true} lg={6} md={6} ml={-12} xs={12} sm={12}>
                                 <Stack direction='column' spacing={2}>
                                     <label className='conLeftItems'>E-Mail :</label>
-                                    <a href='mailto:anyk.hasap@gmail.com' className='smallLink'>anyk.hasap@gmail.com</a>
+                                    <a href='mailto:anyk.hasap@gmail.com' className='smallLink'>info@anykhasap.com</a>
                                 </Stack>
                             </Grid>
                         </Stack>
