@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.be42e46f.css",
+    "main.js": "/static/js/main.2a84a43a.js",
+    "static/media/Adobe.jpeg": "/static/media/Adobe.956d46887239fce480a5.jpeg",
+    "static/media/ForNav.jpeg": "/static/media/ForNav.2aa59c9f42a8cad06845.jpeg",
+    "static/media/aboutUs.png": "/static/media/aboutUs.0c9c138fe2574fff12c3.png",
+    "static/media/leather.jpg": "/static/media/leather.b373d4a44d18b4ce697b.jpg",
+    "static/media/Comfortaa-SemiBold.ttf": "/static/media/Comfortaa-SemiBold.7f56da509e53574ed5ed.ttf",
+    "static/media/Comfortaa-Medium.ttf": "/static/media/Comfortaa-Medium.e26e46e9ed19fd463a58.ttf",
+    "static/media/Comfortaa-Regular.ttf": "/static/media/Comfortaa-Regular.d8756404994c153f8fce.ttf",
+    "static/media/Comfortaa-Light.ttf": "/static/media/Comfortaa-Light.8d7e182e392e617a868f.ttf",
+    "static/media/Comfortaa-Bold.ttf": "/static/media/Comfortaa-Bold.dab2a1458c987d812076.ttf",
+    "index.html": "/index.html",
+    "main.be42e46f.css.map": "/static/css/main.be42e46f.css.map",
+    "main.2a84a43a.js.map": "/static/js/main.2a84a43a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be42e46f.css",
+    "static/js/main.2a84a43a.js"
+  ]
+}
