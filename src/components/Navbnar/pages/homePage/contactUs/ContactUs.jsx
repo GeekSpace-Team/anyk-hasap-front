@@ -56,7 +56,7 @@ const ContactUs = () => {
             <div className='aboutServ'>
                 <p style={{textAlign:"left"}}>{t('underContactUs')}</p>
             </div>
-                <Grid container>
+                <Grid container className="contactMedia">
                     <Grid item={true} lg={6} md={6} xs={12} sm={12}>
                         <div className='ourServ'>
                             

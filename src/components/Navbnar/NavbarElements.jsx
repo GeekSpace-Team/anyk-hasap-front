@@ -37,7 +37,7 @@ font-size:16px;
 
 export const Bars = styled(FaBars)`
 display: none;
-color: black;
+color: rgba(8, 7, 7, 0.700);
 
 @media screen and (max-width: 768px) {
     display: block;

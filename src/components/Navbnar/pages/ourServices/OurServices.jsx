@@ -51,7 +51,7 @@ const OurServices = () => {
               <TitleName>
                 <span>{t('OurServices')}</span>
               </TitleName>
-              <div className='aboutServ'>
+              <div className='aboutServ ourServMedia'>
                 {/* <p>{t('ourServicText')}</p> */}
                 <p>При выборе аудиторской компании, наряду со стоимостью услуг, важную роль играют деловая репутация и опыт. Поэтому, мы беремся только за ту работу, которую можем выполнить действительно хорошо, с полной ответственностью и гарантией качества!</p>
               </div>

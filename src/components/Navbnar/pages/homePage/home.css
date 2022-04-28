@@ -247,4 +247,7 @@ background-color: rgba(255, 255, 255, 0.808);
         height: auto;
         min-height: 400px;
     }
+    .ourServMedia {
+        margin-bottom: 0%;
+    }
 }

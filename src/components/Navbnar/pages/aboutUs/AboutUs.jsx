@@ -87,8 +87,8 @@ const AboutUs = () => {
           </Grid>
 
 
-          <Grid item={true} lg={6} md={6} xs={12} sm={12}>
-            <Grid item={true} lg={12} md={12} xs={12} sm={12} marginTop={9} > 
+          <Grid item={true} xl={6} lg={6} md={6} xs={12} sm={12}>
+            <Grid item={true} ml={7} xl={12} lg={12} md={12} xs={12} sm={12} marginTop={9} > 
               <img style={{width:'100%'}} src="./img/aboutUsImg.png" alt="" />
             </Grid>
           </Grid>

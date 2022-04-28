@@ -2,6 +2,9 @@
     width: 50%;
     min-height: 70vh;
 }
+.css-1x51dt5-MuiInputBase-input-MuiInput-input::after {
+    font-family: 'regularFont';
+}
 .conLeftItems{
     color: #000;
     font-size: 16px;
@@ -64,6 +67,9 @@ textarea{
      color: #000 !important;
      font-family: 'regularFont';
  }
+ .textFielddd__label::after{
+     font-family: 'regularFont';
+ }
 
 
 .inputText input:focus{
@@ -76,5 +82,17 @@ textarea{
 @media (max-width: 768px) {
     .sendMessage {
         margin-bottom: 30px;
+    }
+    /* .contactMedia {
+        margin-top: -17%;
+    } */
+    .conLeftItems {
+        font-size: 10px;
+    }
+    .smallLink {
+        font-size: 10px;
+    }
+    .aboutServ {
+        margin-bottom: -15%;
     }
 }

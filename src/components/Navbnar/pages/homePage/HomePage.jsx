@@ -12,7 +12,6 @@ import Button from '@mui/material/Button';
 import styled from 'styled-components'
 import { NavLink as Link } from 'react-router-dom'
 import './home.css';
-
 //glassmorphisim transparent background like cupertino???????? 
 
 export const NavLink = styled(Link)`
@@ -47,7 +46,6 @@ const HomePage = () => {
               <label className='lableName'>Надёжный бизнес <br /> широкие возможности</label>
               <p style={{marginLeft:"7px"}}>«Anyk Hasap» стремится принести реальную пользу вашему бизнесу.</p>
               <div className='learnMoreButton'>
-
                 <NavLink to="/ourServices" className='navBarItem'>
                   {/* <button>{t('learnMore')}<img src="./img/rightArrow.svg" alt='#' /></button> */}
                   <Button type='submit' variant="outlined" endIcon={<ArrowForwardIosIcon style={{ height: '15px', color: '#FFFFFF' }} />}>
@@ -160,8 +158,8 @@ const HomePage = () => {
               })}
               <div id='secondLearnButton ' style={{paddingBottom:'80px'}} className='learnMoreButton secondLearnButton'>
                   {/* <button onClick={() => setClicked(!clicked)} key={'keeey'} style={{ paddingTop: '1.5%', paddingBottom: '1.5%', paddingRight: '5%', paddingLeft: '5%', border:'none' }}>{t('learnMore')}<img src="./img/rightArrow.svg" alt='#' /></button> */}
-                  <NavLink to="/aboutUs" className='navBarItem'>
-                    <Button  type='submit' variant="outlined" endIcon={<ArrowForwardIosIcon style={{ height: '15px', color: '#AA323C' }} />}>{t('learnMore')}</Button>
+                  <NavLink to="/aboutUs" className='navBarItem minWidthh'>
+                    <Button  type='submit'  variant="outlined" endIcon={<ArrowForwardIosIcon style={{ height: '15px', color: '#AA323C' }} />}>{t('learnMore')}</Button>
                   </NavLink>
               </div>
               </div>
