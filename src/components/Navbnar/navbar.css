@@ -26,8 +26,8 @@
 }
 
 .mobileLink:hover{
-    background-color: white;
-    color: #000;
+  background-color: white;
+  color: #000;
 }
 
 .bgGlass {
@@ -44,34 +44,28 @@
   content: "";
   position: absolute;
   background: inherit;
-  background-image: url(../../../public/img/ForNav.jpeg );
   z-index: -1;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  /* box-shadow: inset 0 0 2000px rgb(141, 136, 136); */
+  box-shadow: inset 0 0 2000px rgb(255, 255, 255);
   /* filter: blur(10px); */
   backdrop-filter: blur(10px);
-  /* background-color: rgba(255, 255, 255, .15); */
+  background-color: rgba(255, 255, 255, .15);
 }
 .header {
   background-attachment: fixed;
-  background-image: url(../../../public/img/ForNav.jpeg );
-}
-.kerpich {
-  background-image: url(../../../public/img/ForNav.jpeg );
-  width: 100%;
 }
 
+
 .header.active {
-  height: 10vh;
+  height: 16vh;
   position: fixed;
   top: 0;
   padding-top:20px;
   width: 100%;
   transition: 0.5s;
-  box-shadow: inset 0 0 2000px rgb(141, 136, 136);
   
 }
 
@@ -80,7 +74,7 @@
 }
 
 .smallLink{
-    color: #fff;
+    color: #000;
     text-decoration: none; 
     font-family:'regularFont';
     font-size: 14px;
@@ -90,21 +84,21 @@
   padding: 4px;
   font-family:'regularFont';
   background-color: transparent;
-  color: #fff;
+  color: #000;
   border: none;
 }
 
 .langBtnActive{
   padding: 5px;
   font-family:'boldFont';
-  /* background-color: white; */
-  color: #fff;
+  background-color: white;
+  color: #000;
   border: none;
 }
 
 .langSelect{
     background-color: transparent;
-    color:#fff;
+    color:#000;
     padding: 3px;
 }
 

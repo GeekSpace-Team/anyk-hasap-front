@@ -5,7 +5,7 @@ import {FaBars} from 'react-icons/fa'
 export const Nav = styled.nav`
  justify-content: space-between;
  // z-index: 10;
- color: #fff;
+ color: #000;
  height: 70px;
  display: flex;
  align-items: center;
@@ -13,7 +13,7 @@ export const Nav = styled.nav`
 ` 
 
 export const NavLink = styled(Link)`
-color: #fff;
+color: #000;
 display: flex;
 align-items: center;
 text-decoration: none;
@@ -58,7 +58,7 @@ align-items: center;
 `
 
 export const InfoContainer = styled.div`
-// background-color:white;
+background-color:white;
 padding-top:6px;
 padding-bottom:6px;
 @media screen and (max-width: 768px) {
