@@ -40,7 +40,7 @@ const FooTter = () => {
                     <Container maxWidth="lg">
                         <Grid container paddingTop={2.5}  justifyContent={'center'} paddingBottom={5}>
                             <Grid item={true} lg={4} md={6} xs={12} sm={12}  >
-                                <img  className='footerImgg' src="./img/loggo.png" style={{ height: '55px',width:'auto', display:'flex', alignItems:'center' }} alt="#" />
+                                <img  className='footerImgg' src="./img/logo.png" style={{ height: '55px',width:'auto', display:'flex', alignItems:'center' }} alt="#" />
                             </Grid>
                             <Grid item={true} lg={4} md={6} xs={12} sm={12}>
                                 <Stack direction={'column'} spacing={2} className='navMedia'>
