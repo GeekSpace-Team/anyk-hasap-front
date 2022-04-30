@@ -190,6 +190,10 @@ background-color: rgba(255, 255, 255, 0.808);
     .homePageLabel{
         width:100%;
     }
+    .homeFirstContianer {
+        background-image: url(../../../../../public/img/bg_mini.jpeg );
+        background-size:cover;
+    }
     .newOurServices label {
         font-size: 17px;
     }
@@ -245,7 +249,7 @@ background-color: rgba(255, 255, 255, 0.808);
     .mediaTransparent{
         background-color: rgba(0, 0, 0, 0.548);
         height: auto;
-        min-height: 400px;
+        min-height: 500px;
     }
     .ourServMedia {
         margin-bottom: 0%;

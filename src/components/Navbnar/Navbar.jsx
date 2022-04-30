@@ -160,8 +160,6 @@ const location = useLocation()
 
   return (
     <div className='fixedFor' >
-       <div className="kerpich">
-         <div className="kerpichBlur">
      <Container maxWidth="lg">
         <InfoContainer>
           <Stack alignItems={'flex-end'} spacing={1} justifyContent={'flex-end'} direction={'row'}>
@@ -172,8 +170,7 @@ const location = useLocation()
           </Stack>
         </InfoContainer>
       </Container>
-      </div>
-      </div>
+      
         <Nav className="header bgGlass">
           <Container maxWidth="lg">
             <Grid container spacing={2} alignItems="center">

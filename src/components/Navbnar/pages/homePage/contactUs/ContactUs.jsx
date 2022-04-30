@@ -97,17 +97,17 @@ const ContactUs = () => {
                         <form ref={form} onSubmit={sendEmail}>
                             <Grid item={true} lg={12} md={12} xs={12} sm={12} mt={-7}>
                                 <Stack spacing={1.5} className='inputText'>
-                                    <TextField id="standard-basic" name="user_name" value={username} onChange={e => setUsername(e.target.value)} variant="standard" label={t('name')} InputLabelProps={{ className: 'textFielddd__label' }} required/>
+                                    <TextField style={{width:'96%'}} id="standard-basic" name="user_name" value={username} onChange={e => setUsername(e.target.value)} variant="standard" label={t('name')} InputLabelProps={{ className: 'textFielddd__label' }} required/>
                                 </Stack>
                             </Grid>
                             <Grid item={true} lg={12} md={12} xs={12} sm={12} mt={10} mt={0}>
                                 <Stack spacing={1.5} marginTop={5}>
-                                    <TextField id="standard-basic" type='email' name="user_email" value={mail} onChange={e => setMail(e.target.value)} label="E-mail" InputLabelProps={{ className: 'textFielddd__label' }} variant="standard" required/>
+                                    <TextField style={{width:'96%'}} id="standard-basic" type='email' name="user_email" value={mail} onChange={e => setMail(e.target.value)} label="E-mail" InputLabelProps={{ className: 'textFielddd__label' }} variant="standard" required/>
                                 </Stack>
                             </Grid>
                             <Grid item={true} lg={12} md={12} xs={12} sm={12}>
                                 <Stack spacing={1.5} marginTop={3}>
-                                    <TextField id="standard-multiline-static" name="message" value={message} onChange={e => setMessage(e.target.value)} InputLabelProps={{ className: 'textFielddd__label' }} multiline rows={6} label={t('yourMess')} variant="standard" required/>
+                                    <TextField style={{width:'96%'}} id="standard-multiline-static" name="message" value={message} onChange={e => setMessage(e.target.value)} InputLabelProps={{ className: 'textFielddd__label' }} multiline rows={6} label={t('yourMess')} variant="standard" required/>
                                 </Stack>
                             </Grid>
                             <Grid item={true} lg={12} md={12} xs={12} sm={12}>
