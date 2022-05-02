@@ -89,10 +89,13 @@ textarea{
     .conLeftItems {
         font-size: 10px;
     }
+    .contactMediaa{
+        margin-top: -10px;
+        margin-bottom: -70px;
+    }
+    
     .smallLink {
         font-size: 10px;
     }
-    .aboutServ {
-        margin-bottom: -15%;
-    }
+   
 }

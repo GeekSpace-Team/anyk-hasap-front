@@ -43,4 +43,7 @@ object-fit: cover;
     .frameText {
         width: 100%;
     }
+    .aboutUsImgContainer img {
+        margin-left: -8%;
+    }
 }

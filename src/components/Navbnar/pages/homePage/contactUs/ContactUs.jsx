@@ -53,7 +53,7 @@ const ContactUs = () => {
             <ContactUsss>
                 <span>{t('contactUs')}</span>
             </ContactUsss>
-            <div className='aboutServ'>
+            <div className='aboutServ contactMediaa'>
                 <p style={{textAlign:"left"}}>{t('underContactUs')}</p>
             </div>
                 <Grid container className="contactMedia">
@@ -82,10 +82,10 @@ const ContactUs = () => {
                                     <label className='conLeftItems'>{t('workD')}: 9:00 - 18:00</label>
                                 </Stack>
                             </Grid>
-                            <Grid item={true} lg={6} md={6} xs={12} ml={-12} sm={12}>
+                            <Grid item={true} lg={6} md={6} ml={-12} xs={12} sm={12}>
                                 <Stack direction='column' spacing={2}>
                                     <label  className='conLeftItems'>{t('adres')}:</label>
-                                    <label style={{width:'110%'}} className='conLeftItems'>{t('address')}</label>
+                                    <label  className='conLeftItems'>{t('address')}</label>
                                 </Stack>
                             </Grid>
                         </Stack>
@@ -100,7 +100,7 @@ const ContactUs = () => {
                                     <TextField style={{width:'96%'}} id="standard-basic" name="user_name" value={username} onChange={e => setUsername(e.target.value)} variant="standard" label={t('name')} InputLabelProps={{ className: 'textFielddd__label' }} required/>
                                 </Stack>
                             </Grid>
-                            <Grid item={true} lg={12} md={12} xs={12} sm={12} mt={10} mt={0}>
+                            <Grid item={true} lg={12} md={12} xs={12} sm={12} mt={10}>
                                 <Stack spacing={1.5} marginTop={5}>
                                     <TextField style={{width:'96%'}} id="standard-basic" type='email' name="user_email" value={mail} onChange={e => setMail(e.target.value)} label="E-mail" InputLabelProps={{ className: 'textFielddd__label' }} variant="standard" required/>
                                 </Stack>
@@ -155,6 +155,9 @@ span {
       transform: scaleX(0.6);
       bottom: -6px;
       position: absolute;
+    }
+    @media (max-width: 768px){
+        font-size: 32px;
     }
 }
 `

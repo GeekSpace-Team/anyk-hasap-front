@@ -6,3 +6,11 @@
     height: auto;
     width: 100%;
 }
+
+@media (max-width: 768px) {
+    .serviceCon{
+        text-align: center;
+        align-items: center;
+    }
+   
+}
