@@ -61,8 +61,8 @@ const OurServices = () => {
                 </p>
               </div>
             </div>
-            <Grid container className="serviceCon">
-              <Grid item lg={12} md={12} xs={12} sm={12}>
+            <Grid container className="serviceCon" ml={4}>
+              <Grid item lg={12} md={12} xs={12} sm={12} mb={7}>
                 <Stack direction="row" gap={3}>
                   <img
                     src="img/Обязательныйаудит.png"
