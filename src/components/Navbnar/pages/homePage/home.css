@@ -190,10 +190,10 @@ background-color: rgba(255, 255, 255, 0.808);
     .homePageLabel{
         width:100%;
     }
-    .homeFirstContianer {
-        background-image: url(../../../../../public/img/bg_mini.jpeg );
+    /* .homeFirstContianer {
+        background-image: url(../../../../../public/img/leather.jpg );
         background-size:cover;
-    }
+    } */
     .newOurServices label {
         font-size: 17px;
     }
