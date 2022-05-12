@@ -63,22 +63,22 @@ const AboutUs = () => {
           <Grid item={true} lg={6} md={6} xs={12} sm={12}>
             <Stack direction="column" spacing={0} marginTop={9}>
             <Grid item={true} md={12} lg={12} xs={12} sm={12} mb={2}>
-              <p style={{fontFamily:'regularFont'}}>Аудиторская компания «Anyk Hasap» с 2018 года предоставляет широкий спектр услуг в области аудита, бухгалтерского учета, налогообложения и управленческого консультирования.</p>
+              <p style={{fontFamily:'regularFont'}}>{t('aboutUsText1')}</p>
             </Grid>
             <Grid item={true} md={12} lg={12} xs={12} sm={12} mb={2}>
-              <p style={{fontFamily:'regularFont'}}>Аудиторы «Anyk Hasap», имеют более 20-и лет стажа безупречной работы в организациях различных сфер деятельности. Это надёжные профессионалы со знаниями и опытом работы в различных отраслях и проектах.</p>
+              <p style={{fontFamily:'regularFont'}}>{t('aboutUsText2')}</p>
             </Grid>
             <Grid item={true} md={12} lg={12} xs={12} sm={12} mb={2}>
-              <p style={{fontFamily:'regularFont'}}>«Anyk Hasap» - в современной сложной коммерческой среде готова работать, чтобы уберечь ваше предприятие от возможных ошибок, снизить налоговые и финансовые риски, улучшить системы внутреннего контроля и налаженность рабочих процессов.</p>
+              <p style={{fontFamily:'regularFont'}}>{t('aboutUsText3')}</p>
             </Grid>
             <Grid item={true} md={12} lg={12} xs={12} sm={12} mb={2}>
-              <p style={{fontFamily:'regularFont'}}>При выборе аудиторской компании, наряду со стоимостью услуг, важную роль играют деловая репутация и опыт. Поэтому, мы стремимся выполнить взятые на себя обязательства быстро, эффективно и с полной ответственностью и гарантией качества!</p>
+              <p style={{fontFamily:'regularFont'}}>{t('aboutUsText4')}</p>
             </Grid>
             <Grid item={true} md={12} lg={12} xs={12} sm={12} mb={2}>
-              <p style={{fontFamily:'regularFont'}}>«Anyk Hasap» стремится принести реальную пользу вашему бизнесу. <br /> Будем рады Вас видеть в числе наших клиентов!</p>
+              <p style={{fontFamily:'regularFont'}}>{t('aboutUsText5')}<br />{t('aboutUsText6')}</p>
             </Grid>
             <Grid item={true} md={12} lg={12} xs={12} sm={12} mb={2}>
-              <p style={{fontFamily:'regularFont'}}>Лицензия на осуществление аудиторской деятельности выдана Министерством экономики и финансов Туркменистана №1-17-29-50 от 28.12.2021 года.</p>
+              <p style={{fontFamily:'regularFont'}}>{t('aboutUsText7')}</p>
             </Grid>
             {/* <Grid item={true} md={12} lg={12} xs={12} sm={12}>
               <p className='frameText'>{t('aboutUsText5')}</p>
