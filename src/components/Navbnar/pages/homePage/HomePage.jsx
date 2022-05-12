@@ -43,7 +43,7 @@ const HomePage = () => {
         <div className='transparent'>
           <Container maxWidth="lg">
             <div className='homePageLabel'>
-              <label className='lableName'>Надёжный бизнес <br /> широкие возможности</label>
+              <label className='lableName'>{t('text1')} <br />{t('text2')}</label>
               <p style={{marginLeft:"7px"}}>{t('aboutUsText5')}</p>
               <div className='learnMoreButton'>
                 <NavLink to="/ourServices" className='navBarItem'>

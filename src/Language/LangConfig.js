@@ -11,6 +11,8 @@ i18n
       en: {
         translation: {
             "homePage":"Home page",
+            "text1":"RELIABLE BUSINESS",
+            "text2":"WIDE POSSIBILITIES",
             "Обязательныйаудит":"Compulsory audit  ",
             "Initiativeaudit":"Initiative audit ",
             "Taxconsulting": "Tax consulting ",
@@ -73,6 +75,8 @@ i18n
             "learnMore":"Dowamyny oka",
             "homeInfoTitle":"Agyry",
             "workD":'Duş-Ann',
+            "text1":"Ygtybarly işewürlik ",
+            "text2":"giň mümkinçilikler",
             "homeInfoText":"Agyrynyň özi esasy saklaýyş ulgamy bolan söýgi. Nädogry giriş",
             "homeUnderTitle":"Agyrynyň özi esasy saklaýyş ulgamy bolan söýgi. Sed placerat scelerisque magna. Sed placerat scelerisque magna.",
             "CalculationT":"Çykdajylary paýlamak usulyny saýlamak boýunça teklipleri taýýarlamak, işleriň, hyzmatlaryň we öndürilen önümleriň özüne düşýän gymmatyny kesgitlemek üçin meýilnama we hakyky kalkulýasiýany düzmek.",
@@ -105,6 +109,8 @@ i18n
       ru: {
         translation: {
             "homePage":"Главная",
+            "text1":"НАДЁЖНЫЙ БИЗНЕС ",
+            "text2":"ШИРОКИЕ ВОЗМОЖНОСТИ",
             "Обязательныйаудит": "Обязательный аудит ",
             "Calculation":"Калькуляции",
             "Managementconsulting":"Управленческое консультирование ",
