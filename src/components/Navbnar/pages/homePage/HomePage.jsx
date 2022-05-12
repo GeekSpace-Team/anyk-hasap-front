@@ -44,7 +44,7 @@ const HomePage = () => {
           <Container maxWidth="lg">
             <div className='homePageLabel'>
               <label className='lableName'>Надёжный бизнес <br /> широкие возможности</label>
-              <p style={{marginLeft:"7px"}}>«Anyk Hasap» стремится принести реальную пользу вашему бизнесу.</p>
+              <p style={{marginLeft:"7px"}}>{t('aboutUsText5')}</p>
               <div className='learnMoreButton'>
                 <NavLink to="/ourServices" className='navBarItem'>
                   {/* <button>{t('learnMore')}<img src="./img/rightArrow.svg" alt='#' /></button> */}
@@ -66,7 +66,8 @@ const HomePage = () => {
           </div>
           <div className='aboutServ'>
             {/* <p>{t('homeUnderTitle')}</p> */}
-            <p  style={{lineHeight:'1.4'}}>При выборе аудиторской компании, наряду со стоимостью услуг, важную роль играют деловая репутация и опыт. Поэтому, мы беремся только за ту работу, которую можем выполнить действительно хорошо, с полной ответственностью и гарантией качества!</p>
+            {/* <p  style={{lineHeight:'1.4'}}>При выборе аудиторской компании, наряду со стоимостью услуг, важную роль играют деловая репутация и опыт. Поэтому, мы беремся только за ту работу, которую можем выполнить действительно хорошо, с полной ответственностью и гарантией качества!</p> */}
+          <p style={{lineHeight:'1.4'}}>{t('aboutUsText4')}</p>
           </div>
         </div>
       </Container>
