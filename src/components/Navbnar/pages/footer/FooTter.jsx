@@ -40,7 +40,7 @@ const FooTter = () => {
                     <Container maxWidth="lg">
                         <Grid container paddingTop={2.5}  justifyContent={'center'} paddingBottom={5}>
                             <Grid item={true} lg={4} md={6} xs={12} sm={12}  >
-                                <img  className='footerImgg' src="./img/logo.png" style={{ height: '55px',width:'auto', display:'flex', alignItems:'center' }} alt="#" />
+                                <img  className='footerImgg' src="./img/newLogo.jpg" style={{ height: '90px',width:'auto', display:'flex', alignItems:'center' }} alt="#" />
                             </Grid>
                             <Grid item={true} lg={4} md={6} xs={12} sm={12}>
                                 <Stack direction={'column'} spacing={2} className='navMedia'>
@@ -63,6 +63,14 @@ const FooTter = () => {
                                     <Stack direction={'row'} spacing={2}>
                                         <img  src='./img/mobileFooter.svg' alt='#' style={{ height: '18px' }} />
                                         <a href='tel:+99365533534' style={{ textDecoration: 'none' }} className='footerTitle'>+993 65 53 35 34</a>
+                                    </Stack>
+                                    <Stack direction={'row'} spacing={2}>
+                                        <img  src='./img/mobileFooter.svg' alt='#' style={{ height: '18px' }} />
+                                        <a href='tel:+99365 56 18 71' style={{ textDecoration: 'none' }} className='footerTitle'>+99365 56 18 71</a>
+                                    </Stack>
+                                    <Stack direction={'row'} spacing={2}>
+                                        <img  src='./img/mobileFooter.svg' alt='#' style={{ height: '18px' }} />
+                                        <a href='tel:+99365 53 93 72' style={{ textDecoration: 'none' }} className='footerTitle'>+99365 53 93 72</a>
                                     </Stack>
                                     <Stack direction={'row'} spacing={2}>
                                         <img src='./img/phoneFooter.svg' alt='#' style={{ height: '18px' }} />

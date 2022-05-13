@@ -162,11 +162,15 @@ const location = useLocation()
     <div className='fixedFor' >
      <Container maxWidth="lg">
         <InfoContainer>
-          <Stack alignItems={'flex-end'} spacing={1} justifyContent={'flex-end'} direction={'row'}>
+          <Stack alignItems={'flex-end'} spacing={2} justifyContent={'flex-end'} direction={'row'}>
             <img src='./img/mail.svg' style={{height:'18px'}}/>
             <a href='mailto:anyk.hasap@gmail.com' className='smallLink'>info@anykhasap.com</a>
             <img src='./img/phone.svg' style={{height:'18px'}}/>
             <a href='tel:+99365 65 53 35 34' className='smallLink'>+99365 53 35 34 </a>
+            <img src='./img/phone.svg' style={{height:'18px'}}/>
+            <a href='tel:+99365 53 93 72' className='smallLink'>+99365 53 93 72 </a>
+            <img src='./img/phone.svg' style={{height:'18px'}}/>
+            <a href='tel:+99365 56 18 71' className='smallLink'>+99365 56 18 71 </a>
           </Stack>
         </InfoContainer>
       </Container>
@@ -177,7 +181,7 @@ const location = useLocation()
 
               <Grid item={true} xs={3} display='flex' alignItems={'center'}>
                 <NavLink to="/">
-                  <img src='./img/logo.png' style={{ height: '50px', paddingBottom:'10px',width:'auto', display:'flex', alignItems:'center' }} />
+                  <img src='./img/newLogo.jpg' style={{ height: '80px', paddingBottom:'10px',width:'auto', display:'flex', alignItems:'center' }} />
                 </NavLink>
               </Grid>
               <Grid item={true} xs={7}>
