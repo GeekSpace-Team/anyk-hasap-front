@@ -66,8 +66,8 @@ const ContactUs = () => {
                                 <Stack direction='column' spacing={2}>
                                     <label className='conLeftItems'>{t('phone')}:</label>
                                     <a href='tel:+99365656565' className='smallLink'>+993  65 53 35 34</a>
-                                    <a href='tel:+99365 56 18 71' className='smallLink'>+99365 56 18 71</a>
-                                    <a href='tel:+99365 53 93 72' className='smallLink'>+99365 53 93 72</a>
+                                    <a href='tel:+99365 56 18 71' className='smallLink'>+993 65 56 18 71</a>
+                                    <a href='tel:+99365 53 93 72' className='smallLink'>+993 65 53 93 72</a>
                                 </Stack>
                             </Grid>
                             <Grid item={true} lg={6} md={6} ml={-12} xs={12} sm={12}>

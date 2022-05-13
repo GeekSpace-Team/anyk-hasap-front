@@ -64,13 +64,11 @@ const FooTter = () => {
                                         <img  src='./img/mobileFooter.svg' alt='#' style={{ height: '18px' }} />
                                         <a href='tel:+99365533534' style={{ textDecoration: 'none' }} className='footerTitle'>+993 65 53 35 34</a>
                                     </Stack>
-                                    <Stack direction={'row'} spacing={2}>
-                                        <img  src='./img/mobileFooter.svg' alt='#' style={{ height: '18px' }} />
-                                        <a href='tel:+99365 56 18 71' style={{ textDecoration: 'none' }} className='footerTitle'>+99365 56 18 71</a>
+                                    <Stack direction={'row'} pl={4} spacing={2}>
+                                        <a href='tel:+99365 56 18 71' style={{ textDecoration: 'none' }} className='footerTitle'> +993 65 56 18 71</a>
                                     </Stack>
-                                    <Stack direction={'row'} spacing={2}>
-                                        <img  src='./img/mobileFooter.svg' alt='#' style={{ height: '18px' }} />
-                                        <a href='tel:+99365 53 93 72' style={{ textDecoration: 'none' }} className='footerTitle'>+99365 53 93 72</a>
+                                    <Stack direction={'row'} pl={4} spacing={2}>
+                                        <a href='tel:+99365 53 93 72' style={{ textDecoration: 'none' }} className='footerTitle'> +993 65 53 93 72</a>
                                     </Stack>
                                     <Stack direction={'row'} spacing={2}>
                                         <img src='./img/phoneFooter.svg' alt='#' style={{ height: '18px' }} />
