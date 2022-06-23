@@ -48,7 +48,10 @@ const ContactUs = () => {
         username: username,
         text: message,
       },
-      headers: { "Access-Control-Allow-Origin": "*" },
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "application/json",
+      },
     }).then(
       (result) => {
         showSuccess("Successfully sended !!!");
