@@ -10,12 +10,15 @@ import Button from "@mui/material/Button";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import axios from "axios";
 import {
   showError,
   showSuccess,
   showWarning,
 } from "../../../../../toast/toast";
 import "./contactUs.css";
+
+// const sgMail = require("sendgrid/mail");
 
 const ContactUs = () => {
   const { t } = useTranslation();
@@ -32,33 +35,33 @@ const ContactUs = () => {
   const [username, setUsername] = useState("");
   const [mail, setMail] = useState("");
   const [message, setMessage] = useState("");
-  const sendEmail = (e) => {
+  const sendEmail = () => {
     if (username == "" || mail == "" || message == "") {
       showWarning("Please enter required informations!");
       return;
     }
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_y72iqna",
-        "template_5d1bbko",
-        form.current,
-        "w--8F8ypQmjt_fscB"
-      )
-      .then(
-        (result) => {
-          showSuccess("Successfully sended !!!");
-          setUsername("");
-          setMail("");
-          setMessage("");
-          console.log(result.text);
-        },
-        (error) => {
-          showError(error.text + "Something is went wrong !!!");
-          console.log(error.text);
-        }
-      );
+    axios({
+      method: "post",
+      url: "http://185.128.213.46:6425/send-mail",
+      data: {
+        email: mail,
+        username: username,
+        text: message,
+      },
+    }).then(
+      (result) => {
+        showSuccess("Successfully sended !!!");
+        setUsername("");
+        setMail("");
+        setMessage("");
+        console.log(result.text);
+      },
+      (error) => {
+        showError(error.text + "Something is went wrong !!!");
+      }
+    );
   };
+
   return (
     <div>
       <Container maxWidth="lg">
@@ -125,13 +128,13 @@ const ContactUs = () => {
             </Grid>
           </Grid>
           <Grid item={true} lg={6} md={6} xs={12} sm={12} pl={2} mt={9}>
-            <form ref={form} onSubmit={sendEmail}>
+            <form>
               <Grid item={true} lg={12} md={12} xs={12} sm={12} mt={-7}>
                 <Stack spacing={1.5} className="inputText">
                   <TextField
                     style={{ width: "96%" }}
                     id="standard-basic"
-                    name="user_name"
+                    name="name"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
                     variant="standard"
@@ -147,7 +150,7 @@ const ContactUs = () => {
                     style={{ width: "96%" }}
                     id="standard-basic"
                     type="email"
-                    name="user_email"
+                    name="email"
                     value={mail}
                     onChange={(e) => setMail(e.target.value)}
                     label="E-mail"
@@ -177,8 +180,8 @@ const ContactUs = () => {
               <Grid item={true} lg={12} md={12} xs={12} sm={12}>
                 <Stack direction={"row"} mt={7} className="sendMessage">
                   <Button
-                    onClick={sendEmail}
-                    type="submit"
+                    onClick={(e) => sendEmail(e)}
+                    type="button"
                     variant="outlined"
                     endIcon={
                       <ArrowForwardIosIcon
