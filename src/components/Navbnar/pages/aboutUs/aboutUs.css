@@ -1,49 +1,48 @@
-.imgContainerAbout img{
-width: 100%;
-object-fit: cover;
+.imgContainerAbout img {
+  width: 100%;
+  object-fit: cover;
 }
-.frameTitle{
-    font-weight: 600;
-    color: #000;
-    font-family: 'regularFont';
+.frameTitle {
+  font-weight: 600;
+  color: #000;
+  font-family: "regularFont";
 }
-.imgAboutUs img  {
-    /* background-image: url(../../../../../public/img/aboutUsImg.png); */
-    background-size: cover;
-     background-repeat: no-repeat;
-     /* height: 50vh;
+.imgAboutUs img {
+  /* background-image: url(../../../../../public/img/aboutUsImg.png); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 50vh;
      width: 100%; */
 }
 .frameText {
-    font-weight: 600;
-    color: #000;
-    font-family: 'regularFont';
-    width: 90%;
-    text-align: left;
+  font-weight: 600;
+  color: #000;
+  font-family: "regularFont";
+  width: 90%;
+  text-align: left;
 }
 
-.circul{
-    border-radius: 50%;
-    background-color: #000;
-    width: 100px;
-    height: 100px;
-    position: relative;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.circul {
+  border-radius: 50%;
+  background-color: #000;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 
 .circul span {
-    position: absolute;
-    font-size: 30px;
+  position: absolute;
+  font-size: 30px;
 }
 @media (max-width: 885px) {
-    .frameText {
-        width: 100%;
-    }
-    .aboutUsImgContainer img {
-        margin-left: -8%;
-    }
+  .frameText {
+    width: 100%;
+  }
+  .aboutUsImgContainer img {
+    margin-left: -8%;
+  }
 }
