@@ -42,7 +42,7 @@ const ContactUs = () => {
     }
     axios({
       method: "post",
-      url: "http://185.128.213.46:6425/send-mail",
+      url: "https://anykhasap.com:6060/send-mail",
       data: {
         email: mail,
         username: username,
